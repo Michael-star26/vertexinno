@@ -1,0 +1,41 @@
+// div,nav,span,h,p,[tuiButton]{
+//     color: black;
+// };
+[tuiButton]:hover{
+    color:white;
+};
+// mobile
+@media screen{
+    @media  (max-width: 600px) {
+        .desktop{
+            display: none;
+        };
+
+        button{
+            margin: 2px;
+        };
+    }
+};
+// desktop
+@media screen{
+    @media (min-width:601px){
+        .mobile{
+            display: none;
+        };
+        [tuiNavigationMain]{
+            display: none
+        }
+    }
+};
+// tablet
+@media screen{
+    @media (min-width:600px){
+        .mobile{
+            display: none;
+        };
+        [tuiNavigationMain]{
+            display: none
+        }
+    }
+};
+

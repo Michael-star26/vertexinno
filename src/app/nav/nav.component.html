@@ -1,0 +1,149 @@
+<!-- desktop -->
+ <div class="desktop">
+    <!-- <header tuiNavigationHeader>
+        <button
+	    tuiIconButton
+        tuiNavigationDrawer
+	    type="button"
+	    (click)="open.set(true)"
+	>
+	    
+	</button> -->
+            
+    <header tuiNavigationHeader>
+
+        <tui-avatar 
+        [src]="src" 
+        />
+        <span 
+        tuiNavigationLogo  
+        >
+        <span tuiFade>VertexInno</span>
+        </span>
+        <hr />
+        <span tuiNavigationSegments>
+            <button 
+            appearance="flat-grayscale"
+            tuiButton
+            type="button">
+            Home
+            </button>
+            <button
+            tuiButton
+            type="button"
+            >
+                About
+            </button>
+            <button
+            tuiButton
+            type="button"
+            >
+                Services
+            </button>
+            <button
+            tuiButton
+            type="button"
+            >
+                Case studie
+            </button>
+            <button
+            tuiButton
+            type="button"
+            >
+                Blog
+            </button>
+        </span>
+        <hr />
+        <div tuiNavigationSegments>
+            <div tuiButtonGroup>
+                <button tuiButton>
+                    <tui-icon icon="@tui.facebook"/>
+                </button>
+                <button tuiButton>
+                    <tui-icon icon="@tui.instagram"/>
+                </button>
+                <button tuiButton>
+                    <tui-icon icon="@tui.linkedin"/>
+                </button>
+                <button tuiButton>
+                    <tui-icon icon="@tui.twitter"/>
+                </button>
+            </div>
+        </div>
+        
+    </header>
+ </div>
+
+
+<!-- mobile -->
+<div class="mobile">   
+<header tuiNavigationHeader>
+    <tui-avatar 
+    [src]="src"
+    tuiNavigationDrawer/>
+    <span 
+    tuiNavigationLogo  
+    [style.display]="'none'"
+    >
+    <span tuiFade [style.display]="'none'">VertexInno</span>
+    </span>
+    <span tuiNavigationSegments>
+        <button 
+        appearance="flat-grayscale"
+        tuiButton
+        type="button">
+        Home
+        </button>
+        <button
+        tuiButton
+        type="button"
+        >
+            About
+        </button>
+        <button
+        tuiButton
+        type="button"
+        >
+            Services
+        </button>
+        <button
+        tuiButton
+        type="button"
+        >
+            Case studie
+        </button>
+        <button
+        tuiButton
+        type="button"
+        >
+            Blog
+        </button>
+    </span>
+    
+    
+</header>
+<div [style.display]="'flex'">
+    <main tuiNavigationMain>
+        <nav compact
+        tuiSubheader>
+        <hr />
+            <div tuiNavigationSegments  [style.margin]="'auto'">
+                <div  tuiAccessories class="d-flex m-auto">
+                    <button tuiButton>
+                        <tui-icon icon="@tui.facebook"/>
+                    </button>
+                    <button tuiButton>
+                        <tui-icon icon="@tui.instagram"/>
+                    </button>
+                    <button tuiButton>
+                        <tui-icon icon="@tui.linkedin"/>
+                    </button>
+                    <button tuiButton>
+                        <tui-icon icon="@tui.twitter"/>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </main>
+</div>
+</div>
