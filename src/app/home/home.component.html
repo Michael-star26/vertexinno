@@ -1,6 +1,44 @@
+<om-retro-grid 
+[gridColor]="'#fff'"
+[fadeColor]="'rgb(0, 13, 0)'"
+[gridColor]="'rgb(0, 13, 0)'">
 <app-nav></app-nav>
-<div [style.display]="'flex'">
-    <main tuiNavigationMain>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error suscipit rem maiores tempore. Eaque sapiente, enim id ut possimus maiores fugiat nesciunt quo amet quis sunt, soluta ipsum tempora.</p>
-    </main>
-</div>
+    <div [style.display]="'flex'">
+        <main tuiNavigationMain>
+            <div>
+                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover">
+                    <div class="uk-overlay uk-light uk-position-cover uk-light">
+                        <tui-notification [appearance]="'positive'">
+                            Strategic solution for financial growth
+                        </tui-notification>
+                        
+                        <div class="row">
+                            <div class="col-md-6 col-12 m-auto">
+                                <om-cryptic-text [text]="'Welcome to vertex'" styleClass="cryptic-text" class="display-4"></om-cryptic-text>
+                                <h2 class="display-4">
+                                    Proactive Tech Solutions For Your Unique Goals
+                                </h2>
+                                <p>
+                                    We are dedicated providing personalized every tech service that empower you to take control
+                                </p>
+                                <button tuiButton appearance="positive">Start Your Financial Journey</button>
+                            </div>
+                            <div class="col-md-6 col-12 m-auto">
+                                <div style="opacity: 0.1;" class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                                sources="https://cdn.pixabay.com/photo/2019/03/07/13/23/startup-4040169_1280.jpg?fit=crop&w=650&h=433&q=80 650w,
+                                https://cdn.pixabay.com/photo/2019/03/07/13/23/startup-4040169_1280.jpg?fit=crop&w=1300&h=866&q=80 1300w;
+                                        media: (min-width: 1200px)"
+                                data-src="https://cdn.pixabay.com/photo/2019/03/07/13/23/startup-4040169_1280.jpg?fit=crop&w=650&h=433&q=80"
+                                data-srcset="https://cdn.pixabay.com/photo/2019/03/07/13/23/startup-4040169_1280.jpg?fit=crop&w=650&h=433&q=80 650w,
+                                            https://cdn.pixabay.com/photo/2019/03/07/13/23/startup-4040169_1280.jpg?fit=crop&w=1300&h=866&q=80 1300w"
+                                sizes="(min-width: 650px) 650px, 100vw" uk-img styl>
+                                <h1>Background Image</h1>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</om-retro-grid>

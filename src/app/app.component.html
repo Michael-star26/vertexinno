@@ -1,1 +1,13 @@
-<app-main></app-main>
+<om-starry-sky skyColor="rgb(0, 13, 0)" 
+[starsBackgroundConfig]="{ starDensity: 0.0015}" [shootingStarsConfig]="{
+    minSpeed: 15,
+    maxSpeed: 35,
+    starColor: 'green',
+    trailColor: '#E3FF47FF'
+  }"
+  [starsBackgroundConfig]="{
+    allStarsTwinkle: true,
+    twinkleProbability: 0.9
+  }">
+    <app-main></app-main>
+</om-starry-sky>
