@@ -9,6 +9,8 @@ import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { BlogComponent } from '../blog/blog.component';
 import { CalltoactionComponent } from '../calltoaction/calltoaction.component';
 import { FooterComponent } from '../footer/footer.component';
+import { TuiNavigation } from '@taiga-ui/layout';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: 'app-main',
@@ -22,7 +24,9 @@ import { FooterComponent } from '../footer/footer.component';
     TestimonialsComponent,
     BlogComponent,
     CalltoactionComponent,
-    FooterComponent
+    FooterComponent,
+    TuiNavigation,
+    NavComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.less'
