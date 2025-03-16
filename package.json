@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
     "@omnedia/ngx-cryptic-text": "^2.0.0",
+    "@omnedia/ngx-dotpattern": "^2.0.0",
     "@omnedia/ngx-retro-grid": "^2.0.0",
     "@omnedia/ngx-starry-sky": "^2.0.0",
     "@taiga-ui/addon-charts": "^4.27.1",

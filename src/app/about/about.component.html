@@ -20,7 +20,7 @@
             <p>
                 At Vertex, we pride ourselves of being a team of experienced developers dedicated to helping clients get tech solutions for their needs
             </p>
-            <div tuiCardLarge>
+            <div tuiCardLarge class="stats">
                 <label tuiCell>
                     <h3 tuiTitle>
                         <strong>
@@ -78,47 +78,33 @@
             </h3>
             <p>In today's rapidly evolving tech landscape, businesses and individuals face unprecidented challenges and opportunities</p>
             <div tuiCardLarge>
-                <label tuiCell>
-                    <h3 tuiTitle>
-                        <strong>
-                            Financial Delivered Growth
-                        </strong>
-                    </h3>
-                    <div>
-                        <strong>
-                            99%
-                        </strong>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 tuiTitle>
+                            <strong>99%</strong>
+                            <span tuiSubtitle>
+                                Increase Profitability
+                            </span>
+                        </h4>
                     </div>
-                </label>
-                <progress
-                tuiProgressBar
-                tuiAppearance="negative"
-                max="100"
-                [style.color]="'darkgreen'"
-                value="96">
-
-                </progress>
-
-                <label tuiCell>
-                    <h3 tuiTitle>
-                        <strong>
-                            Financial Revenue Growth
-                        </strong>
-                    </h3>
-                    <div>
-                        <strong>
-                            96%
-                        </strong>
+                    <div class="col-md-4">
+                        <h4 tuiTitle>
+                            <strong>99%</strong>
+                            <span tuiSubtitle>
+                                Increase Profitability
+                            </span>
+                        </h4>
                     </div>
-                </label>
-                <progress
-                tuiProgressBar
-                tuiAppearance="positive"
-                max="100"
-                [style.color]="'darkgreen'"
-                value="94">
-                </progress>
-                <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive">Request A Consultation</button>
+                    <div class="col-md-4">
+                        <h4 tuiTitle>
+                            <strong>99%</strong>
+                            <span tuiSubtitle>
+                                Increase Profitability
+                            </span>
+                        </h4>
+                    </div>
+                </div>
+                <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive">Get Started Now</button>
             </div>
         </div>
 
