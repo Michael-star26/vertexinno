@@ -16,14 +16,77 @@ background-repeat: no-repeat,repeat;background-size: cover; background-blend-mod
                         We are dedicated providing personalized every tech service that empower you to take control
                     </strong>
                 </p>
-                <button tuiButton appearance="positive" style="background:linear-gradient( 125deg,darkgreen 50%,rgb(167, 250, 1));" tuiRipple>Start Your Financial Journey</button>
+                <button tuiButton appearance="positive" style="background:linear-gradient( 125deg,darkgreen 50%,rgb(167, 250, 1));opacity: 0.7;" tuiRipple>Start Your Financial Journey</button>
             </div>
         </div>
         
-        <div class="col-md-6 col-12 d-lg-block">
-            <div tuiCardMedium class="float-end"></div>
-            <div tuiCardMedium class="float-start"></div>
-            <div tuiCardMedium style="justify-self: last baseline;"></div>
+        <div class="col-md-6 col-12 d-lg-block p-4">
+            <div class="row">
+                <div class="col-md-6 col-6 mb-lg-5 p-3 left">
+                    <div tuiCardMedium class="mt-5" style="height: fit-content;" tuiAppearance="elevated" >
+                        <div tuiCell p-2>
+                            <tui-avatar src="@tui.chart-no-axes-column" style="background-color: darkgreen;color: white;" />
+                        <div tuiTitle style="color: black;">
+                            <span tuiSubtitle>Earnings</span>
+                            <strong>$3500+</strong>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-6 float-end justify-content-end">
+                    <div tuiCardMedium class="mt-5" style="height: fit-content;" tuiAppearance="elevated" >
+                        <div tuiCell p-2>
+                            <tui-avatar src="@tui.users" style="background-color: darkgreen;color: white;" />
+                        <div tuiTitle style="color: black;">
+                            <span tuiSubtitle>New Clients</span>
+                            <strong>200+</strong>
+                        </div>
+                        </div>
+                        <tui-axes
+                            class="axes"
+                            [horizontalLines]="2"
+                            [verticalLines]="4" 
+                        >
+                            <tui-line-chart
+                                [filled]="true"
+                                [height]="200"
+                                [smoothingFactor]="60"
+                                [value]="value"
+                                [width]="400"
+                                [x]="0"
+                                [y]="0"
+                            />
+                        </tui-axes>
+
+                    </div>
+
+                    <div tuiCardMedium class="mt-5" style="height: fit-content;" tuiAppearance="elevated" >
+                        <div tuiCell p-2>
+                            <tui-avatar src="@tui.chart-no-axes-combined" style="background-color: darkgreen;color: white;" />
+                        <div tuiTitle style="color: black;">
+                            <span tuiSubtitle>Investments</span>
+                            <strong>$10000+</strong>
+                        </div>
+                        </div>
+
+                        <tui-axes
+                            class="barAxes"
+                            [axisXLabels]="labelsX"
+                            [axisYLabels]="labelsY"
+                        >
+                            <tui-bar-chart
+                            [collapsed]="true"
+                                [max]="1000"
+                                [value]="barValue" 
+                            />
+                        </tui-axes>
+
+                    </div>
+                </div>
+                
+            </div>
         </div>
 </div>
 
