@@ -1,8 +1,8 @@
-<div  tuiCardLarge> 
+<div  tuiCardLarge tuiAppearance="positive" style="border-color: transparent;box-shadow: none;"> 
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="negative">
+                <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="positive">
                     <ng-container *ngSwitchCase="0">
                         <div tuiCardLarge>
                             <div tuiCell>
@@ -14,7 +14,7 @@
                             </div>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores, eos dolores?
                         </div>
-                        <div tuiCell>
+                        <div tuiCell tuiAppearance="warning">
                             <tui-avatar src="@tui.user"/>
                             <div tuiTitle>Alberta Moore
                                 <span tuiSubtitle>
@@ -95,6 +95,7 @@
                 [style.flex-direction]="'column'"
                 [style.width]="'fit-content'"
                 style="float: inline-end;"
+                tuiAppearance="positive"
                 >
                     <button
                     type="button"
