@@ -1,8 +1,143 @@
-<div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-    <div><h3>1</h3></div>
-    <div><h3>2</h3></div>
-    <div><h3>3</h3></div>
-    <div><h3>4</h3></div>
-    <div><h3>5</h3></div>
-    <div><h3>6</h3></div>
-  </div>
+<div  tuiCardLarge> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="negative">
+                    <ng-container *ngSwitchCase="0">
+                        <div tuiCardLarge>
+                            <div tuiCell>
+                                <h2 tuiTitle>
+                                    <tui-rating ngModel="5"
+                                    icon="star-filled" />
+                                </h2>
+                                <div><tui-icon icon="@tui.quote" /></div>
+                            </div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores, eos dolores?
+                        </div>
+                        <div tuiCell>
+                            <tui-avatar src="@tui.user"/>
+                            <div tuiTitle>Alberta Moore
+                                <span tuiSubtitle>
+                                    Businessman
+                                </span>
+                            </div>
+
+                            <div tuiAccessories>
+                                <tui-avatar src="@tui.linkedin"/>
+                                <strong>Entrepreneur</strong>
+                            </div>
+                        </div>
+                    </ng-container>
+
+
+                    <ng-container *ngSwitchCase="1">
+                        <div tuiCardLarge>
+                            <div tuiCell>
+                                <h2 tuiTitle>
+                                    <tui-rating ngModel="5"
+                                    icon="star-filled" />
+                                </h2>
+                                <div><tui-icon icon="@tui.quote" /></div>
+                            </div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores,two
+                        </div>
+                        <div tuiCell>
+                            <tui-avatar src="@tui.user"/>
+                            <div tuiTitle>Samuel kiehn
+                                <span tuiSubtitle>
+                                    LMN Enterprise
+                                </span>
+                            </div>
+
+                            <div tuiAccessories>
+                                <tui-avatar src="@tui.linkedin"/>
+                                <strong>Brand</strong>
+                            </div>
+                        </div>
+                    </ng-container>
+                    
+                    
+                    <ng-container *ngSwitchCase="2">
+                        <div tuiCardLarge>
+                            <div tuiCell>
+                                <h2 tuiTitle>
+                                    <tui-rating ngModel="5"
+                                    icon="star-filled" />
+                                </h2>
+                                <div><tui-icon icon="@tui.quote" /></div>
+                            </div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate three
+                        </div>
+                        <div tuiCell>
+                            <tui-avatar src="@tui.user"/>
+                            <div tuiTitle>Samuel kiehn
+                                <span tuiSubtitle>
+                                    LMN Enterprise
+                                </span>
+                            </div>
+
+                            <div tuiAccessories>
+                                <tui-avatar src="@tui.linkedin"/>
+                                <strong>Brand</strong>
+                            </div>
+                        </div>
+                    </ng-container>
+
+                </ng-container>
+            </div>
+    
+            
+            
+            <div class="col-md-3">
+                <tui-segmented 
+                [(activeItemIndex)]="segmentedIndex"
+                size="l"
+                [style.flex-direction]="'column'"
+                [style.width]="'fit-content'"
+                style="float: inline-end;"
+                >
+                    <button
+                    type="button"
+                    tuiAppearance="positive"
+                    class="m-2"
+                    >
+                        <tui-avatar
+                            size="xs"
+                            src="https://avatars.githubusercontent.com/u/11832552"/>
+                            <h3 tuiTitle><strong>Alberta Moore</strong>
+                                <span tuiSubtitle>Businessman</span>
+                            </h3>
+                    </button>
+
+                    <button
+                    type="button"
+                    tuiAppearance="positive"
+                    class="m-2"
+                    >
+                        <tui-avatar
+                            size="xs"
+                            src="https://avatars.githubusercontent.com/u/11832552"/>
+                            <h3 tuiTitle> <strong>Lawa Bogisich</strong>
+                                <span tuiSubtitle>UVW Company</span>
+                            </h3>
+                    </button>
+
+
+                    
+                    <button
+                    type="button"
+                    tuiAppearance="positive"
+                    class="m-2"
+                    >
+                        <tui-avatar
+                            size="xs"
+                            src="https://avatars.githubusercontent.com/u/11832552"/>
+                            <h3 tuiTitle><strong>Samuel kiehn</strong>
+                                <span tuiSubtitle>LMN Enterprises</span>
+                            </h3>
+                    </button>
+                </tui-segmented>
+            </div>
+        </div>
+    </div>
+</div>
