@@ -1,26 +1,29 @@
-<div class=" uk-dark uk-dark" style="opacity: 0.5;background-color: transparent;background-image: url(laptop6.webp);background-image: url(calltoaction.webp);background-position: center;
+<div class=" uk-dark uk-dark" style="opacity: 0.7;background-color: transparent;background-image: url(laptop6.webp);background-image: url(calltoaction.webp);background-position: center;
 background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: luminosity;height:100%;
 ">
-    <div class="row">
+    <div class="row d-flex" style="background:linear-gradient( -125deg,transparent 50%,rgb(165, 240, 15),rgb(167, 250, 1));">
         <div class="col-md-6 col-12">
-            <tui-chip [appearance]="'neutral'">
-                Strategic solution for financial growth
-            </tui-chip>
-            <om-cryptic-text [text]="'Welcome to vertex'" styleClass="cryptic-text" class="display-4"></om-cryptic-text>
-            <h2 class="display-4">
-                Proactive Tech Solutions For Your Unique Goals
-            </h2>
-            <p>
-                We are dedicated providing personalized every tech service that empower you to take control
-            </p>
-            <button tuiButton appearance="positive">Start Your Financial Journey</button>
+            <div class="m-4">
+                <tui-chip  [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                    <strong>Strategic solution for financial growth</strong>
+                </tui-chip>
+                <!-- <om-cryptic-text [text]="'Welcome to vertex'" styleClass="cryptic-text" class="display-4 m-2"/> -->
+                <h2 class="display-4 m-2" style="text-decoration-style: double;font-weight: bolder;color: black;font-family: cursive;">
+                    Proactive Tech Solutions For Your Unique Goals
+                </h2>
+                <p style="color: black;">
+                    <strong>
+                        We are dedicated providing personalized every tech service that empower you to take control
+                    </strong>
+                </p>
+                <button tuiButton appearance="positive" style="background:linear-gradient( 125deg,darkgreen 50%,rgb(167, 250, 1));" tuiRipple>Start Your Financial Journey</button>
+            </div>
         </div>
         
-        <div class="col-md-6 col-12">
-            <div >
-            <h1>Background Image</h1>
+        <div class="col-md-6 col-12 d-lg-block">
+            <div tuiCardMedium class="float-end"></div>
+            <div tuiCardMedium class="float-start"></div>
+            <div tuiCardMedium style="justify-self: last baseline;"></div>
         </div>
-        </div>
-    </div>
 </div>
 
