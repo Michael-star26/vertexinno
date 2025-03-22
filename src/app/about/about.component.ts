@@ -4,6 +4,7 @@ import { TuiAvatar, TuiAvatarStack, TuiChip, TuiProgress } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
 import {TuiRipple} from '@taiga-ui/addon-mobile';
 import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
+import { NgxConnectionBeamComponent } from '@omnedia/ngx-connection-beam';
 
 @Component({
   selector: 'app-about',
@@ -18,7 +19,8 @@ import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
     TuiAppearance,
     TuiButton,
     TuiRipple,
-    NgxDotpatternComponent
+    NgxDotpatternComponent,
+    NgxConnectionBeamComponent
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.less'

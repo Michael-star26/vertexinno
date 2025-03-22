@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NavComponent } from '../nav/nav.component';
 import { TuiAppearance, TuiButton, TuiIcon, TuiNotification } from '@taiga-ui/core';
-import { TuiCardLarge, TuiNavigation } from '@taiga-ui/layout';
+import { TuiCardLarge, TuiCardMedium, TuiNavigation } from '@taiga-ui/layout';
 import { NgxCrypticTextComponent } from '@omnedia/ngx-cryptic-text';
 import { NgxRetroGridComponent } from '@omnedia/ngx-retro-grid';
-import { TuiAvatar, TuiAvatarStack, TuiChip } from '@taiga-ui/kit';
+import { TuiAvatar, TuiAvatarOutline, TuiAvatarStack, TuiChip } from '@taiga-ui/kit';
+import { TuiRipple } from '@taiga-ui/addon-mobile';
 @Component({
   selector: 'app-home',
   imports: [
@@ -17,9 +18,11 @@ import { TuiAvatar, TuiAvatarStack, TuiChip } from '@taiga-ui/kit';
     NgxCrypticTextComponent,
     NgxRetroGridComponent,
     TuiAvatar,
-    TuiAvatarStack,
+    TuiAvatarOutline,
     TuiCardLarge,
-    TuiChip
+    TuiChip,
+    TuiRipple,
+    TuiCardMedium
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.less'
