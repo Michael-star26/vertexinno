@@ -21,5 +21,5 @@ import { NgxTracingBeamComponent } from '@omnedia/ngx-tracing-beam';
   styleUrl: './services.component.less'
 })
 export class ServicesComponent {
-  name='Mike'
+  
 }

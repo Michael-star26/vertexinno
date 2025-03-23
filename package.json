@@ -21,6 +21,7 @@
     "@omnedia/ngx-connection-beam": "^2.0.0",
     "@omnedia/ngx-cryptic-text": "^2.0.0",
     "@omnedia/ngx-dotpattern": "^2.0.0",
+    "@omnedia/ngx-flickering-grid": "^2.1.0",
     "@omnedia/ngx-retro-grid": "^2.0.0",
     "@omnedia/ngx-starry-sky": "^2.0.0",
     "@omnedia/ngx-tracing-beam": "^2.0.1",
