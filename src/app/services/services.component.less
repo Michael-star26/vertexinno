@@ -5,7 +5,35 @@
     text-align: center;
 }
 
+header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+    background: linear-gradient(-125deg,rgb(76, 224, 7),black 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    line-height: max;
+    padding: 2px;
+    font-family: cursive;
+}
+
+.dark{
+    background: linear-gradient(-125deg,rgb(0, 0, 0),black 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: large;
+    font-weight: bold;
+}
+
 [tuiAvatarOutline]{
     color: chartreuse;
     background-color: green;
+}
+.cover{
+    inline-size: 13.9375rem;
+    background: url('https://images.pexels.com/photos/933964/pexels-photo-933964.jpeg?auto=compress&cs=tinysrgb&w=400');background-repeat: no-repeat;background-size: contain; background-blend-mode:overlay;height:100%;
+    margin: 2px;
 }
