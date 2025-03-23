@@ -1,7 +1,7 @@
 <div class=" uk-dark uk-dark" style="opacity: 0.7;background-color: transparent;background-image: url(laptop6.webp);background-image: url(calltoaction.webp);background-position: center;
 background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: luminosity;height:100%;
 ">
-    <div class="row d-flex" style="background:linear-gradient( -125deg,transparent 50%,rgb(165, 240, 15),rgb(167, 250, 1));">
+    <div class="row d-flex" style="background:linear-gradient( -125deg,transparent 50%,rgb(165, 240, 15),rgb(167, 250, 1));border-color: transparent;border-radius: 0%;box-shadow: transparent;">
         <div class="col-md-6 col-12">
             <div class="m-4">
                 <tui-chip  [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
@@ -22,7 +22,7 @@ background-repeat: no-repeat,repeat;background-size: cover; background-blend-mod
         
         <div class="col-md-6 col-12 d-lg-block p-4">
             <div class="row">
-                <div class="col-md-6 col-6 mb-lg-5 p-3 left">
+                <div class="col-md-6 col-12 mb-lg-5 p-3 left">
                     <div tuiCardMedium class="mt-5" style="height: fit-content;" tuiAppearance="elevated" >
                         <div tuiCell p-2>
                             <tui-avatar src="@tui.chart-no-axes-column" style="background-color: darkgreen;color: white;" />
@@ -35,7 +35,7 @@ background-repeat: no-repeat,repeat;background-size: cover; background-blend-mod
                 </div>
 
 
-                <div class="col-md-6 col-6 float-end justify-content-end">
+                <div class="col-md-6 col-12 float-end justify-content-end">
                     <div tuiCardMedium class="mt-5" style="height: fit-content;" tuiAppearance="elevated" >
                         <div tuiCell p-2>
                             <tui-avatar src="@tui.users" style="background-color: darkgreen;color: white;" />
@@ -47,7 +47,8 @@ background-repeat: no-repeat,repeat;background-size: cover; background-blend-mod
                         <tui-axes
                             class="axes"
                             [horizontalLines]="2"
-                            [verticalLines]="4" 
+                            [verticalLines]="4"   
+                            tuiRipple                         
                         >
                             <tui-line-chart
                                 [filled]="true"
@@ -57,6 +58,7 @@ background-repeat: no-repeat,repeat;background-size: cover; background-blend-mod
                                 [width]="400"
                                 [x]="0"
                                 [y]="0"
+                                tuiRipple
                             />
                         </tui-axes>
 
@@ -75,11 +77,13 @@ background-repeat: no-repeat,repeat;background-size: cover; background-blend-mod
                             class="barAxes"
                             [axisXLabels]="labelsX"
                             [axisYLabels]="labelsY"
+                            tuiRipple
                         >
                             <tui-bar-chart
                             [collapsed]="true"
                                 [max]="1000"
                                 [value]="barValue" 
+                                tuiRipple
                             />
                         </tui-axes>
 
