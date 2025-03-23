@@ -3,6 +3,7 @@ import { TuiAppearance, TuiTitle } from '@taiga-ui/core';
 import { TuiAvatar, TuiAvatarOutline, TuiChip } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiHeader } from '@taiga-ui/layout';
 import { NgxTracingBeamComponent } from '@omnedia/ngx-tracing-beam';
+import { NgxShineBorderComponent } from '@omnedia/ngx-shine-border';
 
 @Component({
   selector: 'app-services',
@@ -15,7 +16,8 @@ import { NgxTracingBeamComponent } from '@omnedia/ngx-tracing-beam';
     TuiHeader,
     TuiTitle,
     TuiChip,
-    NgxTracingBeamComponent
+    NgxTracingBeamComponent,
+    NgxShineBorderComponent
   ],
   templateUrl: './services.component.html',
   styleUrl: './services.component.less'
