@@ -23,6 +23,7 @@
     "@omnedia/ngx-dotpattern": "^2.0.0",
     "@omnedia/ngx-retro-grid": "^2.0.0",
     "@omnedia/ngx-starry-sky": "^2.0.0",
+    "@omnedia/ngx-tracing-beam": "^2.0.1",
     "@preline/carousel": "^3.0.0",
     "@taiga-ui/addon-charts": "^4.27.1",
     "@taiga-ui/addon-commerce": "^4.27.1",
