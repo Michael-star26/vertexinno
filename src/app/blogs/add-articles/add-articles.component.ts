@@ -1,5 +1,5 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule,Validator, Validators } from '@angular/forms';
 import { TuiDay } from '@taiga-ui/cdk';
 import { TuiAppearance, TuiButton, TuiError, TuiIcon, TuiLabel, TuiNotification, TuiTextfield } from '@taiga-ui/core';
@@ -32,6 +32,7 @@ import { Articles } from '../../interfaces/articles';
     TuiTextareaModule,
     CommonModule
   ],
+  changeDetection:ChangeDetectionStrategy.OnPush,
   templateUrl: './add-articles.component.html',
   styleUrl: './add-articles.component.less'
 })
