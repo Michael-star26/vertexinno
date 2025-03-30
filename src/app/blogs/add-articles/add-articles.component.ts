@@ -47,7 +47,7 @@ export class AddArticlesComponent implements OnInit{
       author:new FormControl('',Validators.required),
       content:new FormControl('',Validators.required),
       views:new FormControl(''),
-      commentEnabled:new FormControl(''),
+      comentEnabled:new FormControl(''),
       readTime:new FormControl('',Validators.required)
     })
   }

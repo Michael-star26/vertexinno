@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class ArticlesService {
-  private url="https://vertexinnobackend.onrender.com/Api/addArticle"
+  private url="http://127.0.0.1:5000/Api/addArticle"
   private articlesDataSubject=new BehaviorSubject('')
   article$=this.articlesDataSubject.asObservable() 
   constructor(private http:HttpClient) { }
