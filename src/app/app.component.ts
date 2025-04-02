@@ -20,7 +20,7 @@ import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
 export class AppComponent implements OnInit{
   constructor(private spinner:NgxSpinnerService){}
   title = 'vertexinno';ngOnInit(): void {
-    this.spinner.show()
+    this.spinner.hide()
     setTimeout(
       ()=>{
         this.spinner.hide()

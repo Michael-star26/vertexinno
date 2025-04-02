@@ -1,27 +1,25 @@
-<div class=" uk-dark uk-dark" style="opacity: 0.7;background-color: transparent;background-image: url(laptop6.webp);background-image: url(calltoaction.webp);background-position: center;
-background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: luminosity;height:100%;
-">
-    <div class="row d-flex" style="background:linear-gradient( -125deg,transparent 50%,rgb(165, 240, 15),rgb(167, 250, 1));border-color: transparent;border-radius: 0%;box-shadow: transparent;border-bottom: 0px solid transparent;filter: drop-shadow(2px 3px 0px rgb(176, 230, 70) )">
-        <div class="col-md-6 col-12" style="border-top: opx solid transparent;">
+<div class=" uk-dark uk-dark" id="main" style="background-image: url('calltoaction.webp')">
+    <div class="row d-flex" id="mainRow">
+        <div class="col-md-6 col-12">
             <div class="m-4">
-                <tui-chip  [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                <tui-chip class="chip"  [size]="'s'">
                     <strong>Strategic solution for financial growth</strong>
                 </tui-chip>
                 <!-- <om-cryptic-text [text]="'Welcome to vertex'" styleClass="cryptic-text" class="display-4 m-2"/> -->
-                <h2 class="display-4 m-2" style="text-decoration-style: double;font-weight: bolder;color: black;font-family: cursive;">
+                <h2 class="display-4 m-2 text">
                     Proactive Tech Solutions For Your Unique Goals
                 </h2>
-                <p style="color: black;">
+                <p class="p">
                     <strong>
                         We are dedicated providing personalized every tech service that empower you to take control
                     </strong>
                 </p>
-                <button tuiButton appearance="positive" style="background:linear-gradient( 125deg,darkgreen 50%,rgb(167, 250, 1));opacity: 0.7;" tuiRipple>Start Your Financial Journey</button>
+                <button tuiButton appearance="positive" tuiRipple>Start Your Financial Journey</button>
             </div>
         </div>
         
         <div class="col-md-6 col-12 d-lg-block p-4">
-            <div class="row">
+            <div class="row" id="charts">
                 <div class="col-md-6 col-12 mb-lg-5 p-3 left">
                     <div tuiCardMedium class="mt-5" style="height: fit-content;border: 0px solid transparent;" tuiAppearance="elevated" >
                         <div tuiCell p-2>
