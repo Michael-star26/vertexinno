@@ -2,7 +2,7 @@
     <tui-chip appearance="positive">
         Case Studies
     </tui-chip>
-    <div tuiCell>
+    <div tuiCell class="desktop">
         <h3 class="display-6" tuiTitle>
             <strong>Lets discover Our Clients' Recent Projects</strong>
         </h3>
@@ -140,6 +140,29 @@
         </div>
 
         <!-- mobile -->
+        <div tuiCell class="mobile">
+            <h3 class="display-6" tuiTitle>
+                <strong class="texts">Lets discover Our Clients' Recent Projects</strong>
+            </h3>
+            <div class="indicators text-center">
+                <button 
+                tuiIconButton 
+                iconStart="@tui.chevron-left" 
+                (click)="carousel.prev()"
+                appearance="positive"
+                type="button"
+                ></button>
+    
+                <button 
+                tuiIconButton 
+                iconStart="@tui.chevron-right" 
+                (click)="carousel.next()"
+                appearance="positive"
+                type="button"
+                class="m-2"
+                ></button>
+            </div>
+        </div>
         <div tuiCarouselButtons class="mobile">
             <tui-carousel
             #carousel

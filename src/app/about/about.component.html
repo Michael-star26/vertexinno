@@ -1,16 +1,9 @@
     <div class="row d-flex" style="border-top:0px solid transparent;">
-        <div class="bg" [style.margin]="'0'" tuiAppearance="positive" style="" >
+        <div class="bg" [style.margin]="'0'" tuiAppearance="positive">
     
     <om-dotpattern patternColor="green" tuiAppearance="positive" [style.width]="'100%'" style="border-color: transparent;border-top: 0px solid transparent;border: 0;">
         <div class="row dots m-2" style="border-top:0px solid transparent;">
-            <div class="col-md-6 col-12 " style="border-top:0px solid transparent;">
-                <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
-                    <strong>
-                        Our Tech Stack
-                    </strong>
-                </tui-chip>
-
-                <ngx-fast-marquee 
+            <ngx-fast-marquee 
                 tuiAppearance="positive"
                 [pauseOnHover]="true"
                 [direction]="'right'"
@@ -19,15 +12,22 @@
                 [useSystemReducedMotion]="true"
                 (mounted)="true"
                 [speed]="50"
-                class="marquee">
-                    <div class="element m-3" tuiAppearance="positive" tuiCardMedium style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover; "></div>
+                class="marque">
+                    <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover; "></div>
                     <hr />
-                    <div class="element m-3" tuiAppearance="positive"  tuiCardMedium style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s');background-position:center;background-size: cover;"></div>
-                    <div class="element m-3" tuiAppearance="positive" tuiCardMedium style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover;"></div>
-                    <div class="element m-3" tuiAppearance="positive" tuiCardMedium style="background-image: url('https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png');background-position:center;background-size: cover;"></div>
-                    <div class="element m-3" tuiAppearance="icon" tuiCardMedium style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU');background-position:center;background-size: cover;"></div>
+                    <div class="element m-3" tuiAppearance="positive"  tuiCardLarge style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s');background-position:center;background-size: cover;"></div>
+                    <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover;"></div>
+                    <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png');background-position:center;background-size: cover;"></div>
+                    <div class="element m-3" tuiAppearance="icon" tuiCardLarge style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU');background-position:center;background-size: cover;"></div>
                 </ngx-fast-marquee>
+            <div class="col-md-6 col-12 " style="border-top:0px solid transparent;">
+                <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                    <strong>
+                        Our Tech Stack
+                    </strong>
+                </tui-chip>
 
+                
                 <div class="beam-wrapper" >
                 <div class="icon" #RefItem1 tuiAppearance="positive">
                   <tui-avatar  tuiAvatarpositive src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlXkwasX3CRBW5UwURT9kVjgN21eMyq9nl-BiCVe6PGdZafm_lvlNC1qmkPbrBGxFTJk&usqp=CAU" />
