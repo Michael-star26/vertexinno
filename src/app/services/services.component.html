@@ -2,7 +2,7 @@
 >
   
 </om-tracing-beam> -->
-<om-dotpattern patternColor="green" tuiAppearance="positive" [style.width]="'100%'" style="border-color: transparent;border-top: 0px solid transparent;border: 0;">
+<om-dotpattern  patternColor="green" tuiAppearance="positive" [style.width]="'100%'" style="border-color: transparent;border-top: 0px solid transparent;border: 0;">
   <div class="content" style="background-image: url(coding.webp);">
     <div class="sub">
       <tui-chip id="chip"  [size]="'s'">
@@ -15,7 +15,7 @@
       </h3>
       <div class="row justify-content-center d-flex" [style.color]="'black'" >      
         <div class="col-md-4  text-center">         
-          <div tuiCardLarge class="m-2" tuiAppearance="flat">
+          <div tuiCardLarge class="m-2" tuiAppearance="warning">
             <header tuiHeader>
               <tui-avatar tuiAvatarOutline src="@tui.user" />
             </header>
@@ -29,7 +29,7 @@
             </h3>
           </div>
   
-          <div tuiCardLarge class="m-2" tuiAppearance="flat">
+          <div tuiCardLarge class="m-2" tuiAppearance="warning">
             <header tuiHeader>
               <tui-avatar tuiAvatarOutline src="@tui.user" />
             </header>
@@ -46,7 +46,7 @@
   
         
         <div class="col-md-4 text-center">
-          <div class="container-wrapper">
+          <div class="container-wrapper" tuiAppearance="warning" tuiCardLarge>
             <header tuiHeader>
               <tui-avatar tuiAvatarOutline src="@tui.user" />
             </header>
@@ -78,7 +78,7 @@
         </div>
   
   
-        <div tuiCardLarge class="m-2" tuiAppearance="flat">
+        <div tuiCardLarge class="m-2" tuiAppearance="floating">
           <header tuiHeader class="dark">
             <tui-avatar tuiAvatarOutline src="@tui.user" />
           </header>

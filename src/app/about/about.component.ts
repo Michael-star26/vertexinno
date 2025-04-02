@@ -5,6 +5,7 @@ import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
 import {TuiRipple} from '@taiga-ui/addon-mobile';
 import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
 import { NgxConnectionBeamComponent } from '@omnedia/ngx-connection-beam';
+import { NgxFastMarqueeModule } from "ngx-fast-marquee";
 
 @Component({
   selector: 'app-about',
@@ -20,7 +21,9 @@ import { NgxConnectionBeamComponent } from '@omnedia/ngx-connection-beam';
     TuiButton,
     TuiRipple,
     NgxDotpatternComponent,
-    NgxConnectionBeamComponent
+    NgxConnectionBeamComponent,
+    NgxFastMarqueeModule,
+    TuiCardMedium
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.less'

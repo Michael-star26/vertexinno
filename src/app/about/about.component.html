@@ -9,15 +9,33 @@
                         Our Tech Stack
                     </strong>
                 </tui-chip>
+
+                <ngx-fast-marquee 
+                [pauseOnHover]="true"
+                [direction]="'right'"
+                [maskPercentage]="20"
+                [autoFill]="true"
+                [useSystemReducedMotion]="true"
+                (mounted)="true"
+                [speed]="50"
+                class="marquee">
+                    <div class="element m-3" tuiAppearance="positive" tuiCardMedium style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover; "></div>
+                    <hr />
+                    <div class="element m-3" tuiAppearance="positive"  tuiCardMedium style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s');background-position:center;background-size: cover;"></div>
+                    <div class="element m-3" tuiAppearance="positive" tuiCardMedium style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover;"></div>
+                    <div class="element m-3" tuiAppearance="positive" tuiCardMedium style="background-image: url('https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png');background-position:center;background-size: cover;"></div>
+                    <div class="element m-3" tuiAppearance="icon" tuiCardMedium style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU');background-position:center;background-size: cover;"></div>
+                </ngx-fast-marquee>
+
                 <div class="beam-wrapper" >
                 <div class="icon" #RefItem1 tuiAppearance="positive">
-                  <tui-avatar  tuiAvatarOutline src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlXkwasX3CRBW5UwURT9kVjgN21eMyq9nl-BiCVe6PGdZafm_lvlNC1qmkPbrBGxFTJk&usqp=CAU" />
+                  <tui-avatar  tuiAvatarpositive src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlXkwasX3CRBW5UwURT9kVjgN21eMyq9nl-BiCVe6PGdZafm_lvlNC1qmkPbrBGxFTJk&usqp=CAU" />
                 </div>
                 <div class="icon" #RefItem2>
-                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s" tuiAvatarOutline />
+                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s" tuiAvatarpositive />
                 </div>
                 <div class="icon" #RefItem3>
-                    <tui-avatar src="https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp" tuiAvatarOutline />
+                    <tui-avatar src="https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp" tuiAvatarpositive />
                 </div>
                 <div class="center">
                   <div class="" #RefCenter>
@@ -25,13 +43,13 @@
                   </div>
                 </div>
                 <div class="icon" #RefItem4>
-                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbUy6_kKPlbyMKuGoe_yIue3ujdXLCXZiiw&s" tuiAvatarOutline />
+                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbUy6_kKPlbyMKuGoe_yIue3ujdXLCXZiiw&s" tuiAvatarpositive />
                 </div>
                 <div class="icon" #RefItem5>
-                    <tui-avatar src="https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png" tuiAvatarOutline />
+                    <tui-avatar src="https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png" tuiAvatarpositive />
                 </div>
                 <div class="icon" #RefItem6>
-                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU" tuiAvatarOutline />
+                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU" tuiAvatarpositive />
                 </div>
           
                 <om-connection-beam
@@ -144,7 +162,7 @@
                     [style.color]="'darkgreen'"
                     value="94">
                     </progress>
-                    <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;width: fit-content;">Request A Consultation</button>
+                    <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;">Request A Consultation</button>
                 </div>
             </div>
         </div>
@@ -203,7 +221,7 @@
                             </h4>
                         </div>
                     </div>
-                    <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;width: fit-content;">Get Started Now</button>
+                    <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;">Get Started Now</button>
                 </div>
             </div>
     

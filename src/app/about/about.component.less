@@ -109,3 +109,33 @@ om-connection-beam {
     background: linear-gradient(167deg, rgba(186,246,27,1) 0%, rgb(182, 235, 76) 5%, rgba(255,255,255,1) 50%);
     border-top:0px solid transparent;
   }
+
+@media screen{
+    @media (max-width:600px){
+        .beam-wrapper{
+          display: none;
+        }
+    }
+};
+
+@media screen{
+  @media (min-width:601px){
+      .marquee{
+        display: none;
+      }
+  }
+};
+
+.marquee{
+  .element{
+    padding: 3px;
+    border:0px solid transparent;
+  }
+}
+
+.element{
+  padding: 3px;
+  border:0px solid transparent;
+  background-color: transparent;
+  inline-size: 12rem;
+}
