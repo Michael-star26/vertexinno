@@ -78,9 +78,9 @@
     tuiNavigationLogo  
     [style.display]="'none'"
     >
-    <span tuiFade [style.display]="'none'">VertexInno</span>
+    <span tuiFade [style.display]="'none'">Vertex</span>
     </span>
-    <span tuiNavigationSegments>
+    <span tuiNavigationSegments class="m-auto">
         <button 
         appearance="flat-grayscale"
         tuiButton
@@ -110,22 +110,21 @@
     
 </header>
 <nav  tuiNavigationNav >
-        <hr />
-            <div tuiNavigationSegments  [style.margin]="'auto'">
-                <div  tuiAccessories class="d-flex m-auto">
-                    <button tuiButton>
-                        <tui-icon icon="@tui.facebook"/>
-                    </button>
-                    <button tuiButton>
-                        <tui-icon icon="@tui.instagram"/>
-                    </button>
-                    <button tuiButton>
-                        <tui-icon icon="@tui.linkedin"/>
-                    </button>
-                    <button tuiButton>
-                        <tui-icon icon="@tui.twitter"/>
-                    </button>
-                </div>
+        <div tuiNavigationSegments class="m-auto">
+            <div  tuiAccessories>
+                <button tuiButton>
+                    <tui-icon icon="@tui.facebook"/>
+                </button>
+                <button tuiButton>
+                    <tui-icon icon="@tui.instagram"/>
+                </button>
+                <button tuiButton>
+                    <tui-icon icon="@tui.linkedin"/>
+                </button>
+                <button tuiButton>
+                    <tui-icon icon="@tui.twitter"/>
+                </button>
             </div>
-        </nav>
+        </div>
+    </nav>
 </div>
