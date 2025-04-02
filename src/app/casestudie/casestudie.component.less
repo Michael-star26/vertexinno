@@ -4,3 +4,26 @@
     justify-self: center;
     text-align: center;
 }
+
+@media screen{
+    @media (min-width:601px){
+      .container,.testimonial{
+        overflow-x: hidden;
+      }
+      .mobile{
+        display: none
+      }
+    }
+  };
+  
+  @media screen{
+    @media (max-width:600px){
+      .container,.testimonial{
+        overflow-x: hidden;
+        zoom:80%
+      }
+      .desktop{
+        display: none
+      }
+    }
+  };
