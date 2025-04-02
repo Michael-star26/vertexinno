@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { MainComponent } from "./main/main.component";
 import { NgxStarrySkyComponent } from '@omnedia/ngx-starry-sky';
 import { NgxSpinnerModule, NgxSpinnerService } from "ngx-spinner";
+import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { NgxSpinnerModule, NgxSpinnerService } from "ngx-spinner";
     TuiRoot,
     MainComponent,
     NgxStarrySkyComponent,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    NgxDotpatternComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less'
