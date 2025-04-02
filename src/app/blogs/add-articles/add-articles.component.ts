@@ -56,7 +56,7 @@ export class AddArticlesComponent implements OnInit{
     const articles:Articles={
       title:this.articleForm.value.title,
       author:this.articleForm.value.author,
-      commentEnabled:this.articleForm.value.commentEnabled,
+      commentEnabled:true,
       content:this.articleForm.value.content,
       date:Date.now(),
       readTime:this.articleForm.value.readTime,
