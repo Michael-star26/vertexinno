@@ -10,7 +10,7 @@
 	    
 	</button> -->
             
-    <header tuiNavigationHeader style="overflow-x: hidden;">
+    <header tuiNavigationHeader>
 
         <tui-avatar 
         [src]="src" 
@@ -69,8 +69,8 @@
  </div>
 
 <!-- mobile -->
-<div class="mobile">   
-<header tuiNavigationHeader style="overflow-y:hidden">
+<div class="mobile" style="overflow-x: hidden;">   
+<header tuiNavigationHeader>
     <tui-avatar 
     [src]="src"
     tuiNavigationDrawer/>
@@ -109,8 +109,8 @@
     
     
 </header>
-<!-- <nav
-        tuiNavigationNav>
+<nav
+        tuiNavigationNav style="position: sticky;overflow-x: hidden;">
         <hr />
             <div tuiNavigationSegments  [style.margin]="'auto'">
                 <div  tuiAccessories class="d-flex m-auto">
@@ -128,5 +128,5 @@
                     </button>
                 </div>
             </div>
-        </nav> -->
+        </nav>
 </div>
