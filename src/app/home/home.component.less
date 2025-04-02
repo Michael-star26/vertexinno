@@ -23,12 +23,28 @@ div,h,a{
     background-color: yellowgreen;
 }
 
-.text{
-    text-decoration-style: double;
-    font-weight: bolder;
-    color: black;
-    font-family: cursive;
-}
+
+@media screen{
+    @media (min-width:601px){
+        .text{
+            text-decoration-style: double;
+            font-weight: bolder;
+            color: black;
+            font-family: cursive;
+        }
+    }
+  };
+  @media screen{
+    @media (max-width:600px){
+        .text{
+            text-decoration-style: double;
+            font-weight: bolder;
+            color: black;
+        }
+    }
+  };
+
+
 .p{
     color: black;
 }
