@@ -13,7 +13,7 @@ interface artticleTypes {
 })
 
 export class ArticlesService {
-  private url="http://127.0.0.1:5000/Api"
+  private url="https://vertexinnobackend.onrender.com/Api"
   private post="addArticle"
   private get="getArticles"
   private articlesDataSubject=new BehaviorSubject('')
@@ -36,7 +36,7 @@ export class ArticlesService {
   }
 
   getArticles():Observable<artticleTypes[]>{
-    return this.http.get<artticleTypes[]>("http://127.0.0.1:5000/Api/getArticles")
+    return this.http.get<artticleTypes[]>("https://vertexinnobackend.onrender.com/Api/getArticles")
   }
 
 
@@ -44,7 +44,7 @@ export class ArticlesService {
   public mydata$=this.dataSubject.asObservable()
    
   getData(){
-    this.http.get('http://127.0.0.1:5000/Api/getArticles').subscribe(
+    this.http.get('https://vertexinnobackend.onrender.com/Api/getArticles').subscribe(
       (response:any)=>{
         console.log('Success')
         this.dataSubject.next(response)
