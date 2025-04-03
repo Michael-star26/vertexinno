@@ -3,7 +3,7 @@
         <div class="row">
             <!-- mobile -->
             <div class="col-md-3 m-auto" class="mobile">
-                <tui-segmented 
+                <!-- <tui-segmented 
                 [(activeItemIndex)]="segmentedIndex"
                 size="l"
                 [style.flex-direction]="'row'"
@@ -52,7 +52,58 @@
                                 <span tuiSubtitle>LMN Enterprises</span>
                             </h3>
                     </button>
-                </tui-segmented>
+                </tui-segmented> -->
+                <ngx-fast-marquee 
+
+                tuiAppearance="positive"
+                [pauseOnHover]="true"
+                [direction]="'left'"
+                [maskPercentage]="10"
+                [autoFill]="true"
+                [useSystemReducedMotion]="true"
+                [speed]="10"
+                class="brands">
+
+                <button
+                type="button"
+                tuiAppearance="positive"
+                class="m-2"
+                style="border-radius: 15px;border:0px solid lightgreen;padding: 1px;"
+                >
+                    <tui-avatar
+                        size="xs"
+                        src="https://avatars.githubusercontent.com/u/11832552"/>
+                        <h3 tuiTitle><strong>Alberta Moore</strong>
+                            <span tuiSubtitle>Businessman</span>
+                        </h3>
+                </button>
+                <button
+                        type="button"
+                        tuiAppearance="positive"
+                        class="m-2"
+                        style="border-radius: 15px;border:0px solid lightgreen;padding: 1px;"
+                        >
+                            <tui-avatar
+                                size="xs"
+                                src="https://avatars.githubusercontent.com/u/11832552"/>
+                                <h3 tuiTitle><strong>Alberta Moore</strong>
+                                    <span tuiSubtitle>Businessman</span>
+                                </h3>
+                        </button>
+                        <button
+                        type="button"
+                        tuiAppearance="positive"
+                        class="m-2"
+                        style="border-radius: 15px;border:0px solid lightgreen;padding: 1px;"
+                        >
+                            <tui-avatar
+                                size="xs"
+                                src="https://avatars.githubusercontent.com/u/11832552"/>
+                                <h3 tuiTitle><strong>Alberta Moore</strong>
+                                    <span tuiSubtitle>Businessman</span>
+                                </h3>
+                        </button>
+                </ngx-fast-marquee>
             </div>
             <!-- end of mobile -->
 

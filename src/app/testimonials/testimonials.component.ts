@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { TuiAppearance, TuiButton, TuiIcon, TuiTitle } from '@taiga-ui/core';
 import { TuiAvatar, TuiCarousel, TuiRating, TuiSegmented } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
+import { NgxFastMarqueeModule } from "ngx-fast-marquee"
 @Component({
   selector: 'app-testimonials',
   imports: [
@@ -19,6 +20,8 @@ import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
     TuiRating,
     FormsModule,
     TuiIcon,
+    NgxFastMarqueeModule,
+    TuiButton
   ],
   changeDetection:ChangeDetectionStrategy.OnPush,
   templateUrl: './testimonials.component.html',
