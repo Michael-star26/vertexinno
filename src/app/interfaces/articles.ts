@@ -1,10 +1,10 @@
 export interface Articles {
-    title:String,
-    author:String,
-    content:String,
+    title:string,
+    author:string,
+    content:string,
     date:any,
-    commentEnabled:Boolean,
-    readTime:Number,
-    featuredImage:String,
-    views:Number
+    commentEnabled:boolean,
+    readTime:number,
+    featuredImage:string,
+    views:number
 }

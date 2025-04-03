@@ -8,7 +8,7 @@
     [useSystemReducedMotion]="true"
     [speed]="50"
     class="marque">
-        <div class="element m-3" tuiAppearance="positive"  tuiCardMedium>
+        <div class="element m-3" tuiAppearance="positive"  tuiCardMedium *ngFor="let article of data">
             <div class="card image-header" >
                 <div class="card-header fg-white"
                      style="background-image: url(https://images.pexels.com/photos/31328987/pexels-photo-31328987/free-photo-of-female-mallard-duck-standing-on-frozen-lake.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);background-position: center;background-size: cover;background-blend-mode: exclusion;border-radius: 15px;">
@@ -17,118 +17,16 @@
                     <div tuiCell>
                         <tui-avatar src="@tui.calendar"></tui-avatar>
                         <p class="fg-gray" tuiTitle tuiFade>
-                            <strong>Posted on January 21, 2015</strong>
+                            <strong>Posted on January {{article.date}}</strong>
                         </p>
 
                         <div>
                             <tui-avatar src="@tui.calendar"></tui-avatar>
-                            Alex Riy
+                            {{article.author}}
                         </div>
                     </div>
                     <span tuiFade>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis pariatur doloribus sed explicabo illo quasi quis fugit officiis. 
-                    </span>
-                </div>
-                <div class="card-footer">
-                    <button tuiButton>Read More</button>
-                    <button 
-                        tuiIconButton 
-                        iconEnd="@tui.arrow-up-right"
-                        appearance="positive"
-                        type="button"
-                        style="border-radius: 50px;color: white;"
-                        tuiRipple="green"
-                        ></button>
-                </div>
-            </div>
-        </div>
-        <div class="element m-3" tuiAppearance="positive"  tuiCardMedium>
-            <div class="card image-header" >
-                <div class="card-header fg-white"
-                     style="background-image: url(https://images.pexels.com/photos/31328987/pexels-photo-31328987/free-photo-of-female-mallard-duck-standing-on-frozen-lake.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);background-position: center;background-size: cover;background-blend-mode: exclusion;border-radius: 15px;">
-                </div>
-                <div class="card-content p-2">
-                    <div tuiCell>
-                        <tui-avatar src="@tui.calendar"></tui-avatar>
-                        <p class="fg-gray" tuiTitle tuiFade>
-                            <strong>Posted on January 21, 2015</strong>
-                        </p>
-
-                        <div>
-                            <tui-avatar src="@tui.calendar"></tui-avatar>
-                            Alex Riy
-                        </div>
-                    </div>
-                    <span tuiFade>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis pariatur doloribus sed explicabo illo quasi quis fugit officiis. 
-                    </span>
-                </div>
-                <div class="card-footer">
-                    <button tuiButton>Read More</button>
-                    <button 
-                        tuiIconButton 
-                        iconEnd="@tui.arrow-up-right"
-                        appearance="positive"
-                        type="button"
-                        style="border-radius: 50px;color: white;"
-                        tuiRipple="green"
-                        ></button>
-                </div>
-            </div>
-        </div>
-        <div class="element m-3" tuiAppearance="positive"  tuiCardMedium>
-            <div class="card image-header" >
-                <div class="card-header fg-white"
-                     style="background-image: url(https://images.pexels.com/photos/31328987/pexels-photo-31328987/free-photo-of-female-mallard-duck-standing-on-frozen-lake.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);background-position: center;background-size: cover;background-blend-mode: exclusion;border-radius: 15px;">
-                </div>
-                <div class="card-content p-2">
-                    <div tuiCell>
-                        <tui-avatar src="@tui.calendar"></tui-avatar>
-                        <p class="fg-gray" tuiTitle tuiFade>
-                            <strong>Posted on January 21, 2015</strong>
-                        </p>
-
-                        <div>
-                            <tui-avatar src="@tui.calendar"></tui-avatar>
-                            Alex Riy
-                        </div>
-                    </div>
-                    <span tuiFade>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis pariatur doloribus sed explicabo illo quasi quis fugit officiis. 
-                    </span>
-                </div>
-                <div class="card-footer">
-                    <button tuiButton>Read More</button>
-                    <button 
-                        tuiIconButton 
-                        iconEnd="@tui.arrow-up-right"
-                        appearance="positive"
-                        type="button"
-                        style="border-radius: 50px;color: white;"
-                        tuiRipple="green"
-                        ></button>
-                </div>
-            </div>
-        </div>
-        <div class="element m-3" tuiAppearance="positive"  tuiCardMedium>
-            <div class="card image-header" >
-                <div class="card-header fg-white"
-                     style="background-image: url(https://images.pexels.com/photos/31328987/pexels-photo-31328987/free-photo-of-female-mallard-duck-standing-on-frozen-lake.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);background-position: center;background-size: cover;background-blend-mode: exclusion;border-radius: 15px;">
-                </div>
-                <div class="card-content p-2">
-                    <div tuiCell>
-                        <tui-avatar src="@tui.calendar"></tui-avatar>
-                        <p class="fg-gray" tuiTitle tuiFade>
-                            <strong>Posted on January 21, 2015</strong>
-                        </p>
-
-                        <div>
-                            <tui-avatar src="@tui.calendar"></tui-avatar>
-                            Alex Riy
-                        </div>
-                    </div>
-                    <span tuiFade>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis pariatur doloribus sed explicabo illo quasi quis fugit officiis. 
+                        {{article.content}}
                     </span>
                 </div>
                 <div class="card-footer">
@@ -162,8 +60,7 @@
     [useSystemReducedMotion]="true"
     [speed]="70"
     class="brands">
-        <div class="brandElement m-3" tuiAppearance="positive"  tuiCardMedium>
-            
+        <div class="brandElement m-3" tuiAppearance="positive" >
                 
         </div>
 
@@ -180,3 +77,6 @@
             
         </div>
 </ngx-fast-marquee>
+
+
+  
