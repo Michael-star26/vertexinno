@@ -85,3 +85,20 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
   .shine-border{
     background-color:transparent; 
   }
+  // mobile
+@media screen{
+  @media (max-width:600px){
+      #desktop{
+          display: none;
+      };
+  }
+};
+
+// desktop
+@media screen{
+  @media (min-width:601px){
+      #mobile{
+          display: none;
+      };
+  }
+};

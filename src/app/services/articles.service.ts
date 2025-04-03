@@ -13,14 +13,14 @@ interface artticleTypes {
 })
 
 export class ArticlesService {
-  private url="https://vertexinnobackend.onrender.com/Api"
+  private url="http://127.0.0.1:5000/Api"
   private post="addArticle"
   private get="getArticles"
   private articlesDataSubject=new BehaviorSubject('')
-  private getArticle=new BehaviorSubject('')
   article$=this.articlesDataSubject.asObservable() 
-  fetchedArticle$=this.getArticle.asObservable()
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) { 
+    this.getData()
+  }
 
   addArticles(articles:Articles){
     this.http.post(`${this.url}/${this.post}`,articles).subscribe(
@@ -36,16 +36,15 @@ export class ArticlesService {
   }
 
   getArticles():Observable<artticleTypes[]>{
-    return this.http.get<artticleTypes[]>("https://vertexinnobackend.onrender.com/Api/getArticles")
+    return this.http.get<artticleTypes[]>("http://127.0.0.1:5000/Api/getArticles")
   }
-
 
 
   private dataSubject:BehaviorSubject<artticleTypes[]>=new BehaviorSubject<artticleTypes[]>([])
   public mydata$=this.dataSubject.asObservable()
    
-  getMembers(){
-    this.http.get('https://vertexinnobackend.onrender.com/Api/getArticles').subscribe(
+  getData(){
+    this.http.get('http://127.0.0.1:5000/Api/getArticles').subscribe(
       (response:any)=>{
         console.log('Success')
         this.dataSubject.next(response)
