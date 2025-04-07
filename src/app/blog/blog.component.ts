@@ -15,6 +15,7 @@ interface artticleTypes {
   content: number;
   author: string;
   readTime: number;
+  date:string
 }
 
 @Component({
@@ -42,12 +43,12 @@ export class BlogComponent implements OnInit{
   constructor(private article:ArticlesService,private http:HttpClient ){}
   data:any[]=[]
   error=''
+  url:string=''
   info:any[]=[]
   ngOnInit(): void {
     this.article.getArticles().subscribe(
       (response:any) => {
         this.data = response
-        console.log(this.data);
       },
       (err) => {
         this.error = err;
@@ -60,6 +61,16 @@ export class BlogComponent implements OnInit{
       this.info=res
     }
   )  
+
+  this.article.getImage().subscribe(
+    (response)=>{
+      this.url=response.imgUrl
+      console.log(this.url)
+    },
+    (error)=>{
+      this.error=error
+    }
+  )
   }
 
 }

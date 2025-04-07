@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TuiAppearance, TuiTitle } from '@taiga-ui/core';
-import { TuiBadge, TuiChip } from '@taiga-ui/kit';
+import { TuiAvatar, TuiBadge, TuiChip } from '@taiga-ui/kit';
 import { TuiCardMedium, TuiHeader } from '@taiga-ui/layout';
 import { NgxFlickeringGridComponent } from '@omnedia/ngx-flickering-grid';
 
@@ -13,7 +13,8 @@ import { NgxFlickeringGridComponent } from '@omnedia/ngx-flickering-grid';
     TuiTitle,
     TuiAppearance,
     TuiBadge,
-    NgxFlickeringGridComponent
+    NgxFlickeringGridComponent,
+    TuiAvatar
   ],
   templateUrl: './howitworks.component.html',
   styleUrl: './howitworks.component.less'

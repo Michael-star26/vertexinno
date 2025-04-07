@@ -1,13 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Articles } from '../interfaces/articles';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, interval, Observable, switchMap } from 'rxjs';
+
 interface artticleTypes {
   title: string;
   content: number;
   author: string;
   readTime: number;
 }
+
+interface image {
+  url:string
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -36,7 +42,9 @@ export class ArticlesService {
   }
 
   getArticles():Observable<artticleTypes[]>{
-    return this.http.get<artticleTypes[]>("https://vertexinnobackend.onrender.com/Api/getArticles")
+    return interval(1000).pipe(
+      switchMap(()=>this.http.get<artticleTypes[]>("https://vertexinnobackend.onrender.com/Api/getArticles"))
+    )
   }
 
 
@@ -53,5 +61,10 @@ export class ArticlesService {
         console.error(error) 
       }
     )
+  }
+
+  
+  getImage():Observable<any>{
+    return this.http.get<any>('http://127.0.0.1:5000/Api/getImages')
   }
 }
