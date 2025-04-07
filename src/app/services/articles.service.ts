@@ -65,6 +65,6 @@ export class ArticlesService {
 
   
   getImage():Observable<any>{
-    return this.http.get<any>('http://127.0.0.1:5000/Api/getImages')
+    return this.http.get<any>('https://vertexinnobackend.onrender.com/Api/getImages')
   }
 }
