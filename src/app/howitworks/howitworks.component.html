@@ -1,4 +1,4 @@
-<om-flickering-grid 
+<!-- <om-flickering-grid 
 color="darkgreen" 
 [flickerChance]="0.2" 
 [gridGap]="15" 
@@ -9,9 +9,9 @@ color="darkgreen"
             How It Works
         </tui-chip>
     
-        <div class="" tuiAppearance="" >
+        <div class="" tuiAppearance="flat" >
             <div class="container">
-                <div class="row justify-content-center align-content-center g-2">
+                <div class="row justify-content-center align-content-center gx-5 gy-2">
                     <div class="col-md-3 col-6" tuiAppearance="flat" tuiCardMedium>
                         <div class="d-flex">
                             <tui-avatar class="m-auto d-flex" src="favicon.ico"></tui-avatar>
@@ -23,7 +23,6 @@ color="darkgreen"
                             </span>
                         </h4>
                     </div>
-            
             
                     <div class="col-md-3 col-6" tuiAppearance="glass" tuiCardMedium>
                         <div>
@@ -69,4 +68,31 @@ color="darkgreen"
         </div>
     </div>
 </om-flickering-grid>
-
+ -->
+ <div class=" card m-3" tuiCardLarge tuiAppearance="floating">
+    <om-flickering-grid 
+ tuiAppearance=""
+ color="darkgreen" 
+ [flickerChance]="1" 
+ style="background-color: transparent;"
+ [gridGap]="50" 
+ [maxOpacity]="0.5" 
+ [squareSize]="3">
+ <div class="timeline-wrapper" tuiAppearance="" >
+    <h1>
+      How It Works
+      <om-neon-underline [middleColor]="'green'" [sideColor]="'yellowgreen'"></om-neon-underline>
+    </h1>
+    <om-timeline
+      [data]="data"
+      [entryGap]="'1rem'"
+      [titleMaxWidth]="'15rem'"
+    ></om-timeline>
+</div>
+</om-flickering-grid>
+<div>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus obcaecati rerum deserunt dicta, enim laudantium architecto ducimus, quod amet accusantium recusandae quisquam corporis expedita molestias quis dolorem officia quam!
+    </p>
+</div>
+</div>
