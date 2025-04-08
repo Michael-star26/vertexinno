@@ -84,9 +84,21 @@ color="darkgreen"
       <om-neon-underline [middleColor]="'green'" [sideColor]="'yellowgreen'"></om-neon-underline>
     </h1>
     <om-timeline
-      [data]="data"
+      [data]="data1"
       [entryGap]="'1rem'"
       [titleMaxWidth]="'15rem'"
+    ></om-timeline>
+</div>
+<div class="timeline-wrapper" tuiAppearance="" >
+    <h1>
+      How It Works
+      <om-neon-underline [middleColor]="'green'" [sideColor]="'yellowgreen'"></om-neon-underline>
+    </h1>
+    <om-timeline
+      [data]="data2"
+      [entryGap]="'1rem'"
+      [titleMaxWidth]="'15rem'"
+      orientation="left"
     ></om-timeline>
 </div>
 </om-flickering-grid>

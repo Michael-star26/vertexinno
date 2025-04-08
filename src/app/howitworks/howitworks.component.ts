@@ -25,18 +25,22 @@ import { NgxNeonUnderlineComponent } from '@omnedia/ngx-neon-underline';
   styleUrl: './howitworks.component.less'
 })
 export class HowitworksComponent {
-  data: TimelineEntry[] = [
+  data1: TimelineEntry[] = [
     {
       title: '<p>Start</p>',
-      content: '<div tuiAppearance="positive">The beginning of the project.<div>',
+      content: '<div class="uk-margin-auto uk-margin-auto-vertical"><h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Headline</h1><p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>',
     },
     {
       title: '<p>Development</p>',
       content: '<div>Key development milestones achieved.</div>',
-    },
+    }
+    
+  ];
+
+  data2: TimelineEntry[] = [
     {
-      title: '<p>Launch</p>',
-      content: '<div>The project goes live!</div>',
+      title: '<p>Start</p>',
+      content: '<div class="uk-margin-auto uk-margin-auto-vertical"><h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Headline</h1><p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>',
     },
     {
       title: '<p>end</p>',
