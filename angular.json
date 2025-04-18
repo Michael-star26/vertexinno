@@ -39,8 +39,7 @@
             "styles": [
               "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
               "node_modules/@taiga-ui/core/styles/taiga-ui-fonts.less",
-              "src/styles.less",
-              "https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+              "src/styles.less"
             ],
             "scripts": []
           },
