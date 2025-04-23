@@ -1,0 +1,68 @@
+<form tuiForm="l" (ngSubmit)="submits()" tuiCardLarge [formGroup]="articleForm" class="m-auto">
+    <tui-notification>
+        <h3>Add Articles</h3>
+    </tui-notification>
+
+    @if(message){
+        <tui-notification appearance="positive">{{message}}</tui-notification>
+    }@else if(error){
+        <tui-notification appearance="negative">{{error}}</tui-notification>
+    }@else{
+        <tui-notification appearance="info">Fill All The Fields</tui-notification>
+    }
+
+    <tui-textfield>
+        <label tuiLabel>
+            Title
+        </label>
+        <input type="text" formControlName="title" placeholder="Enter Article Title"
+        tuiTextfield>
+    </tui-textfield>
+    <tui-error formControlName="title" [error]="[]|tuiFieldError|async" />
+
+    <tui-textfield>
+        <label tuiLabel>Author</label>
+        <input type="text" formControlName="author" placeholder="Enter Author Name" tuiTextfield>
+    </tui-textfield>
+    <tui-error formControlName="author" [error]="[]|tuiFieldError|async" />
+
+    <tui-textarea formControlName="content">
+        Content
+        <textarea formControlName="content" placeholder="Enter Article Body" tuiTextfieldLegacy>
+
+        </textarea>
+    </tui-textarea>
+    <tui-error formControlName="content" [error]="[]|tuiFieldError|async" />
+
+    <!-- <tui-textfield>
+        <label tuiLabel>Date</label>
+        <tui-input-date-time formControlName="date"></tui-input-date-time>
+        <input type="date" [value]="date" placeholder="Date Posted" tuiTextfield>
+    </tui-textfield> -->
+    <tui-error formControlName="date" [error]="[]|tuiFieldError|async" />
+
+    <tui-textfield>
+        <label tuiLabel>readTime</label>
+        <input type="number" formControlName="readTime" placeholder="Read Time" tuiTextfield>
+    </tui-textfield>
+    <tui-error formControlName="readTime" [error]="[]|tuiFieldError|async" />
+
+    <label tuiLabel>
+        <input type="checkbox"
+        tuiSwitch
+        formControlName="commentEnabled"/>
+        Enable Comments
+        <tui-icon tuiTooltip="Enable Comments" />
+    </label>
+    <tui-error formControlName="commentEnabled" [error]="[]|tuiFieldError|async" />
+
+    <footer>
+        <button tuiButton appearance="warning" type="reset">
+            Cancel
+        </button>
+
+        <button tuiButton appearance="warning" type="submit" [disabled]="!articleForm.valid">
+            Post Article
+        </button>
+    </footer>
+</form>

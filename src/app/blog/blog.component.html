@@ -1,1 +1,83 @@
-<p>blog works!</p>
+<ngx-fast-marquee 
+style="background-color: #10291e;"
+    tuiAppearance="positive"
+    [pauseOnHover]="true"
+    [direction]="'right'"
+    [maskPercentage]="10"
+    [autoFill]="true"
+    [useSystemReducedMotion]="true"
+    [speed]="50"
+    class="marque">
+        <div class="element m-3" tuiAppearance="positive"  tuiCardMedium *ngFor="let article of data">
+            <div class="card image-header" *ngIf="url">
+                <div class="card-header fg-white" 
+                     style="background-image: url({{url}});background-position: center;background-size: cover;background-blend-mode: exclusion;border-radius: 15px;">
+                </div>
+                <div class="card-content p-2">
+                    <div tuiCell>
+                        <tui-avatar src="@tui.calendar"></tui-avatar>
+                        <p class="fg-gray" tuiTitle tuiFade>
+                            <strong>Posted on {{article.date}}</strong>
+                        </p>
+
+                        <div>
+                            <tui-avatar src="@tui.calendar"></tui-avatar>
+                            {{article.author}}
+                        </div>
+                    </div>
+                    <span tuiFade>
+                        {{article.content}}
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <button tuiButton>Read More</button>
+                    <button 
+                        tuiIconButton 
+                        iconEnd="@tui.arrow-up-right"
+                        appearance="positive"
+                        type="button"
+                        style="border-radius: 50px;color: white;"
+                        tuiRipple="green"
+                        ></button>
+                </div>
+            </div>
+        </div>
+</ngx-fast-marquee>
+
+<tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+    <strong>
+        Brands And Partners
+    </strong>
+</tui-chip>
+
+<ngx-fast-marquee 
+style="background-color: #10291e;"
+    tuiAppearance="positive"
+    [pauseOnHover]="true"
+    [direction]="'left'"
+    [maskPercentage]="10"
+    [autoFill]="true"
+    [useSystemReducedMotion]="true"
+    [speed]="70"
+    class="brands">
+        <div class="brandElement m-3" tuiAppearance="positive" >
+                
+        </div>
+
+        <div class="brandElement m-3" tuiAppearance="positive"  tuiCardMedium>
+            
+                
+        </div>
+
+        <div class="brandElement m-3" tuiAppearance="positive"  tuiCardMedium>
+            
+        </div>
+
+        <div class="brandElement m-3" tuiAppearance="positive"  tuiCardMedium>
+            
+        </div>
+</ngx-fast-marquee>
+
+<div *ngFor="let date of data">
+    {{date.date}}
+</div>

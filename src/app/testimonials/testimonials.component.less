@@ -28,6 +28,25 @@ header {
   }
 }
 
-.container,.testimonial{
-  overflow-x: hidden;
-}
+@media screen{
+  @media (min-width:601px){
+    .container,.testimonial{
+      overflow-x: hidden;
+    }
+    .mobile{
+      display: none
+    }
+  }
+};
+
+@media screen{
+  @media (max-width:600px){
+    .container,.testimonial{
+      overflow-x: hidden;
+      zoom:70%
+    }
+    .desktop{
+      display: none
+    }
+  }
+};

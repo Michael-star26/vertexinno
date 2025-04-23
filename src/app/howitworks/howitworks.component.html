@@ -1,70 +1,44 @@
-<om-flickering-grid [squareSize]="6" color=""  style="opacity: 0.7;background-image: url(coding.webp);background-image: url(coding.webp);background-position: center;background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: overlay;height:100%;border: 0px solid transparent;" >
-    <div class="card"  style="background: rgb(186,246,27);
-background: linear-gradient(210deg,transparent 50%, rgb(220, 238, 171) 0%, rgba(184,249,31,1) 0%, rgba(255,255,255,1) 50%);border: 0px solid transparent;" >
-        <div class="" tuiAppearance="positive">
-            <tui-chip appearance="positive">
-                How It Works
-            </tui-chip>
-        
-            <h3 tuiHeader>
-                Vertex Work Process
-            </h3>
-            <div class="container">
-                <div class="row justify-content-center align-content-center">
-                    <div class="col-md-3 col-6">
-                        <div tuiCardMedium tuiAppearance="positive">
-                            <img src="favicon.ico" alt="">
-                        </div>
-                        <header tuiHeader tuiBadge appearance="positive">1</header>
-                        <h4 tuiTitle>On Discussion
-                            <span tuiSubtitle>
-                                This is the subtitle. this is where the info is explained
-                            </span>
-                        </h4>
-                    </div>
-            
-            
-                    <div class="col-md-3 col-6">
-                        <div tuiCardMedium tuiAppearance="positive">
-                            <img src="favicon.ico" alt="">
-                        </div>
-                        <header tuiHeader tuiBadge appearance="positive">2</header>
-                        <h4 tuiTitle>On Discussion
-                            <span tuiSubtitle>
-                                This is the subtitle. this is where the info is explained
-                            </span>
-                        </h4>
-                    </div>
-            
-            
-                    <div class="col-md-3 col-6">
-                        <div tuiCardMedium tuiAppearance="positive">
-                            <img src="favicon.ico" alt="">
-                        </div>
-                        <header tuiHeader tuiBadge appearance="positive">3</header>
-                        <h4 tuiTitle>On Discussion
-                            <span tuiSubtitle>
-                                This is the subtitle. this is where the info is explained
-                            </span>
-                        </h4>
-                    </div>
-            
-            
-                    <div class="col-md-3 col-6">
-                        <div tuiCardMedium tuiAppearance="positive">
-                            <img src="favicon.ico" alt="">
-                        </div>
-                        <header tuiHeader tuiBadge appearance="positive">4</header>
-                        <h4 tuiTitle>On Discussion
-                            <span tuiSubtitle>
-                                This is the subtitle. this is where the info is explained
-                            </span>
-                        </h4>
-                    </div>
-        
-                </div>
-            </div>
-            
-        </div>
-    </div>
+ <div class=" section py-5 " style="background-color: #10291e;">
+    <om-flickering-grid 
+ tuiAppearance=""
+ color="darkgreen" 
+ [flickerChance]="1" 
+ style="background-color: transparent;"
+ [gridGap]="10" 
+ [maxOpacity]="0.5" 
+ [squareSize]="5">
+ <div class="timeline-wrapper" tuiAppearance="" >
+    <h1 class="fw-bold display-6 mb-3 text-light">
+      How It Works
+      <om-neon-underline [middleColor]="'green'" [sideColor]="'yellowgreen'"></om-neon-underline>
+    </h1>
+    <om-timeline
+    class="fw-bold mb-3 text-light"
+    style="color: rgb(0, 36, 3);"
+      [data]="data1"
+      [entryGap]="'1rem'"
+      [titleMaxWidth]="'15rem'"
+    ></om-timeline>
+</div>
+<div class="timeline-wrapper" tuiAppearance="" >
+    <h1 class="align-self-start fw-bold mb-3 text-light">
+        From Idea to Impact
+      <om-neon-underline [middleColor]="'green'" [sideColor]="'yellowgreen'"></om-neon-underline>
+    </h1>
+    <om-timeline
+    class="fw-bold mb-3 text-light"
+      [data]="data2"
+      [entryGap]="'1rem'"
+      [titleMaxWidth]="'15rem'"
+      orientation="left"
+    ></om-timeline>
+</div>
 </om-flickering-grid>
+<div>
+    <p tuiTitle class="fw-bold mb-3 text-light">Looking for Something Else?
+        <span tuiSubtitle class="fw-bold mb-3 text-light">
+            If you have a unique project or need a solution not listed above, we’re happy to help.At Vertex, we offer flexible, custom tech services tailored to your vision — just reach out and let’s explore what we can build together.
+        </span>
+    </p>
+</div>
+</div>

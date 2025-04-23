@@ -11,6 +11,7 @@ import { CalltoactionComponent } from '../calltoaction/calltoaction.component';
 import { FooterComponent } from '../footer/footer.component';
 import { TuiNavigation } from '@taiga-ui/layout';
 import { NavComponent } from '../nav/nav.component';
+import { ArticlesComponent } from '../blogs/articles/articles.component';
 
 @Component({
   selector: 'app-main',
@@ -26,7 +27,8 @@ import { NavComponent } from '../nav/nav.component';
     CalltoactionComponent,
     FooterComponent,
     TuiNavigation,
-    NavComponent
+    NavComponent,
+    ArticlesComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.less'
