@@ -38,14 +38,15 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
     margin: 2px;
 }
 
-.content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    padding: 0px;
-  }
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 2rem 2rem;
+}
 
 // @media only screen and (min-width:600px) {
 //     .content{
@@ -62,14 +63,7 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
     height: 350px;
     text-align: center;
   }
-  .content{
-    opacity: 0.7;
-    background-position: center;
-    background-repeat: no-repeat,repeat;
-    background-size: cover; 
-    background-blend-mode: overlay;
-    height:100%;
-  }
+
   .sub{
     background: rgb(222, 250, 144);
     background: linear-gradient(-45deg,

@@ -19,7 +19,8 @@ import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
 })
 export class AppComponent implements OnInit{
   constructor(private spinner:NgxSpinnerService){}
-  title = 'vertexinno';ngOnInit(): void {
+  title = 'vertexinno';
+  ngOnInit(): void {
     this.spinner.hide()
     setTimeout(
       ()=>{
