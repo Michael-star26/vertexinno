@@ -47,10 +47,5 @@ export class HowitworksComponent {
     
   ];
 
-  data2: TimelineEntry[] = [
-    
-    
-    
-  ];
 }
 
