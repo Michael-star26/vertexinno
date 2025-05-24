@@ -27,26 +27,29 @@ import { NgxNeonUnderlineComponent } from '@omnedia/ngx-neon-underline';
 export class HowitworksComponent {
   data1: TimelineEntry[] = [
     {
-      title: '<p>Tell Us What You Need</p>',
-      content: '<div class="uk-margin-auto uk-margin-auto-vertical"><h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Planning</h1><p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;">We start by understanding your goals. Whether it’s a website, mobile app, or custom system, we listen carefully and ask the right questions.</p></div></div>',
+      title: '<p class="timeline-title">1</p>',
+      content: '<div class="uk-margin-auto uk-margin-auto-vertical"><h1 class="timeline-title" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Tell Us What You Need</h1><p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;" class="timeline-content">We start by understanding your goals. Whether it’s a website, mobile app, or custom system, we listen carefully and ask the right questions.</p></div></div>',
     },
     {
-      title: '<p>Get a Custom Plan</p>',
-      content: '<div>Based on your needs and budget, we provide a clear proposal with timelines, deliverables, and a strategy tailored to your business.</div>',
+      title: '<p class="timeline-title">2</p>',
+      content: '<div class="uk-margin-auto uk-margin-auto-vertical"><h1 class="timeline-title" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Get a Custom Plan</h1><p class="timeline-content" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;" class="timeline-content">Based on your needs and budget, we provide a clear proposal with timelines, deliverables, and a strategy tailored to your business.</p></div></div>',
       
-    }
+    },
+    {
+      title: '<p class="timeline-title">4</p>',
+      content: '<div class="uk-margin-auto uk-margin-auto-vertical"><h1 class="timeline-title" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">We Build & Test</h1><p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;" class="timeline-content">Our team designs, develops, and rigorously tests your solution — ensuring it’s reliable, scalable, and ready for real-world use.</p></div></div>',
+    },
+    {
+      title: '<p class="timeline-title">5</p>',
+      content: '<div class="uk-margin-auto uk-margin-auto-vertical"><h1 class="timeline-title" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Launch & Support</h1><p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;" class="timeline-content">We deploy your product, provide training if needed, and offer ongoing support to keep everything running smoothly as your business grows.</p></div></div>',
+    },
+   
     
   ];
 
   data2: TimelineEntry[] = [
-    {
-      title: '<p> We Build & Test</p>',
-      content: '<div class="uk-margin-auto uk-margin-auto-vertical"><h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Quality is our benchmark — nothing goes live until it’s perfect.</h1><p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;">Our team designs, develops, and rigorously tests your solution — ensuring it’s reliable, scalable, and ready for real-world use.</p></div></div>',
-    },
-    {
-      title: '<p>Launch & Support</p>',
-      content: '<div>We deploy your product, provide training if needed, and offer ongoing support to keep everything running smoothly as your business grows. <div>',
-    },
+    
+    
     
   ];
 }

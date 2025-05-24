@@ -1,4 +1,4 @@
- <div class=" section py-5 " style="background-color: #10291e;">
+ <div class=" section " style="background-color: #10291e;" tuiCardLarge>
     <om-flickering-grid 
  tuiAppearance=""
  color="darkgreen" 
@@ -6,33 +6,26 @@
  style="background-color: transparent;"
  [gridGap]="10" 
  [maxOpacity]="0.5" 
- [squareSize]="5">
+ [squareSize]="5"
+ class="">
+ 
  <div class="timeline-wrapper" tuiAppearance="" >
-    <h1 class="fw-bold display-6 mb-3 text-light">
+    <h1 class=" display-6 text-light">
       How It Works
       <om-neon-underline [middleColor]="'green'" [sideColor]="'yellowgreen'"></om-neon-underline>
     </h1>
     <om-timeline
-    class="fw-bold mb-3 text-light"
+    class="fw-bold  text-light m-auto"
     style="color: rgb(0, 36, 3);"
       [data]="data1"
       [entryGap]="'1rem'"
       [titleMaxWidth]="'15rem'"
+      [orientation]="'switch'"
+      [pathColor]="'green'"
+      [gradientColors]="['lime','#00FF91FF']"
     ></om-timeline>
 </div>
-<div class="timeline-wrapper" tuiAppearance="" >
-    <h1 class="align-self-start fw-bold mb-3 text-light">
-        From Idea to Impact
-      <om-neon-underline [middleColor]="'green'" [sideColor]="'yellowgreen'"></om-neon-underline>
-    </h1>
-    <om-timeline
-    class="fw-bold mb-3 text-light"
-      [data]="data2"
-      [entryGap]="'1rem'"
-      [titleMaxWidth]="'15rem'"
-      orientation="left"
-    ></om-timeline>
-</div>
+
 </om-flickering-grid>
 <div>
     <p tuiTitle class="fw-bold mb-3 text-light">Looking for Something Else?

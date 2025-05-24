@@ -2,7 +2,7 @@ import { NgSwitch, NgSwitchCase } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TuiAppearance, TuiButton, TuiIcon, TuiTitle } from '@taiga-ui/core';
-import { TuiAvatar, TuiCarousel, TuiRating, TuiSegmented } from '@taiga-ui/kit';
+import { TuiAvatar, TuiCarousel, TuiChip, TuiRating, TuiSegmented } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
 import { NgxFastMarqueeModule } from "ngx-fast-marquee"
 
@@ -22,7 +22,8 @@ import { NgxFastMarqueeModule } from "ngx-fast-marquee"
     FormsModule,
     TuiIcon,
     NgxFastMarqueeModule,
-    TuiButton
+    TuiButton,
+    TuiChip
   ],
   changeDetection:ChangeDetectionStrategy.OnPush,
   templateUrl: './testimonials.component.html',

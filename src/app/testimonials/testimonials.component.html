@@ -4,6 +4,11 @@
             <div class=" mobile">
                 <!-- mobile -->
                 <div class=" m-auto" class="">
+                    <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;" class="mx-5">
+                        <strong>
+                            Testimonials
+                        </strong>
+                    </tui-chip>
                     <tui-segmented 
                     [(activeItemIndex)]="segmentedIndex"
                     size="l"
@@ -147,7 +152,13 @@
             </div>
 
             <!-- ddesktop -->
+            <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;width: fit-content;" class="mx-5">
+                <strong>
+                    Testimonials
+                </strong>
+            </tui-chip>
              <div class="row desktop m-3">
+                
                 <div class="col-md-9">
                     <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="">
                         <ng-container *ngSwitchCase="0">

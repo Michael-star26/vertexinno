@@ -35,17 +35,7 @@ background: linear-gradient(210deg,transparent 50%, rgb(220, 238, 171) 0%, rgba(
 
   }
 
-  .timeline-title {
-    font-size: 3rem;
-    color: #929292;
-    font-weight: bold;
-  }
-
-  .timeline-content {
-    font-size: 1rem;
-    color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+  
 
   .timeline-content ul {
     list-style-type: circle;
@@ -60,4 +50,48 @@ background: linear-gradient(210deg,transparent 50%, rgb(220, 238, 171) 0%, rgba(
   .card{
     --tui-background-base:red
   }
+
+
+  @media screen{
+    @media (max-width:600px){
+      .fw-bold {
+        inline-size: 100%;
+      }
+      .timeline-title {
+        font-size: 28px;
+        color: white;
+        font-weight: bold;
+      }
+    
+      .timeline-content {
+        font-size: 1rem;
+        color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+};
+
+@media screen{
+  @media (min-width:601px){
+    .fw-bold {
+      inline-size: 70%;
+    }
+    .timeline-title {
+      font-size: 3rem;
+      color: white;
+      font-weight: bold;
+    }
   
+    .timeline-content {
+      font-weight: lighter;
+      color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+};
+  
+
+
+
+
+
