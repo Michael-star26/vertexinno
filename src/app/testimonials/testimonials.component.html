@@ -1,5 +1,5 @@
 <div class="section" style="background-color: #10291e;">
-    <div class="testimonial" tuiAppearance="positive" style="border-color: transparent;box-shadow: none;"> 
+    <div class="testimonial" tuiAppearance="" style="border-color: transparent;box-shadow: none;"> 
         <div class="">
             <div class=" mobile">
                 <!-- mobile -->
@@ -59,16 +59,16 @@
                 <div class="m-3">
                     <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="positive">
                         <ng-container *ngSwitchCase="0">
-                            <div tuiCardLarge>
+                            <div tuiCardLarge tuiAppearance="glass">
                                 <div tuiCell>
                                     <h2 tuiTitle>
-                                        <tui-rating ngModel="5"
+                                        <tui-rating class="rating"  ngModel="5"
                                         icon="star-filled" />
                                     </h2>
                                     <div><tui-icon icon="@tui.quote" /></div>
                                 </div>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores, eos dolores?
-                                <div tuiCell tuiAppearance="warning">
+                                <div tuiCell tuiAppearance="accent">
                                     <tui-avatar src="@tui.user"/>
                                     <div tuiTitle>Alberta Moore
                                         <span tuiSubtitle>
@@ -86,7 +86,7 @@
     
     
                         <ng-container *ngSwitchCase="1">
-                            <div tuiCardLarge>
+                            <div tuiCardLarge tuiAppearance="negative">
                                 <div tuiCell>
                                     <h2 tuiTitle>
                                         <tui-rating ngModel="5"
@@ -95,7 +95,7 @@
                                     <div><tui-icon icon="@tui.quote" /></div>
                                 </div>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores,two
-                                <div tuiCell>
+                                <div tuiCell tuiAppearance="accent">
                                     <tui-avatar src="@tui.user"/>
                                     <div tuiTitle>Samuel kiehn
                                         <span tuiSubtitle>
@@ -113,7 +113,7 @@
                         
                         
                         <ng-container *ngSwitchCase="2" >
-                            <div tuiCardLarge >
+                            <div tuiCardLarge tuiAppearance="accent">
                                 <div tuiCell>
                                     <h2 tuiTitle>
                                         <tui-rating ngModel="5"
@@ -122,7 +122,7 @@
                                     <div><tui-icon icon="@tui.quote" /></div>
                                 </div>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate three
-                                <div tuiCell>
+                                <div tuiCell tuiAppearance="glass">
                                     <tui-avatar src="@tui.user"/>
                                     <div tuiTitle>Samuel kiehn
                                         <span tuiSubtitle>
@@ -147,20 +147,20 @@
             </div>
 
             <!-- ddesktop -->
-             <div class="row desktop">
+             <div class="row desktop m-3">
                 <div class="col-md-9">
-                    <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="positive">
+                    <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="">
                         <ng-container *ngSwitchCase="0">
-                            <div tuiCardLarge>
+                            <div tuiCardLarge tuiAppearance="glass">
                                 <div tuiCell>
                                     <h2 tuiTitle>
-                                        <tui-rating ngModel="5"
+                                        <tui-rating class="rating"  ngModel="5"
                                         icon="star-filled" />
                                     </h2>
                                     <div><tui-icon icon="@tui.quote" /></div>
                                 </div>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores, eos dolores?
-                                <div tuiCell tuiAppearance="warning">
+                                <div tuiCell tuiAppearance="accent">
                                     <tui-avatar src="@tui.user"/>
                                     <div tuiTitle>Alberta Moore
                                         <span tuiSubtitle>
@@ -178,7 +178,7 @@
     
     
                         <ng-container *ngSwitchCase="1">
-                            <div tuiCardLarge>
+                            <div tuiCardLarge tuiAppearance="negative">
                                 <div tuiCell>
                                     <h2 tuiTitle>
                                         <tui-rating ngModel="5"
@@ -187,7 +187,7 @@
                                     <div><tui-icon icon="@tui.quote" /></div>
                                 </div>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores,two
-                                <div tuiCell>
+                                <div tuiCell tuiAppearance="accent">
                                     <tui-avatar src="@tui.user"/>
                                     <div tuiTitle>Samuel kiehn
                                         <span tuiSubtitle>
@@ -204,8 +204,8 @@
                         </ng-container>
                         
                         
-                        <ng-container *ngSwitchCase="2">
-                            <div tuiCardLarge>
+                        <ng-container *ngSwitchCase="2" >
+                            <div tuiCardLarge tuiAppearance="accent">
                                 <div tuiCell>
                                     <h2 tuiTitle>
                                         <tui-rating ngModel="5"
@@ -214,7 +214,7 @@
                                     <div><tui-icon icon="@tui.quote" /></div>
                                 </div>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate three
-                                <div tuiCell>
+                                <div tuiCell tuiAppearance="glass">
                                     <tui-avatar src="@tui.user"/>
                                     <div tuiTitle>Samuel kiehn
                                         <span tuiSubtitle>
