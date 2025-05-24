@@ -5,6 +5,7 @@ import { TuiAppearance, TuiButton, TuiIcon, TuiTitle } from '@taiga-ui/core';
 import { TuiAvatar, TuiCarousel, TuiRating, TuiSegmented } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
 import { NgxFastMarqueeModule } from "ngx-fast-marquee"
+
 @Component({
   selector: 'app-testimonials',
   imports: [
