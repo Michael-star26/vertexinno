@@ -20,11 +20,11 @@ import { NgxFastMarqueeModule } from "ngx-fast-marquee";
     TuiCardMedium,
     TuiIcon,
     NgxBackgroundBeamsComponent,
-    NgxFastMarqueeModule
+    NgxFastMarqueeModule,
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.less'
 })
 export class FooterComponent {
-
+  now=new Date().getFullYear()
 }
