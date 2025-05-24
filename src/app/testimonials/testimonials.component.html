@@ -1,17 +1,17 @@
-<div class="section py-5" style="background-color: #10291e;">
-    <div  tuiCardLarge class="testimonial" tuiAppearance="positive" style="border-color: transparent;box-shadow: none;"> 
-        <div class="container">
-            <div class="row">
+<div class="section" style="background-color: #10291e;">
+    <div class="testimonial" tuiAppearance="positive" style="border-color: transparent;box-shadow: none;"> 
+        <div class="">
+            <div class=" mobile">
                 <!-- mobile -->
-                <div class="col-md-3 m-auto" class="mobile">
+                <div class=" m-auto" class="">
                     <tui-segmented 
                     [(activeItemIndex)]="segmentedIndex"
-                    size="l"
+                    size="m"
                     [style.flex-direction]="'row'"
                     [style.width]="'fit-content'"
                     style="float: inline-end;"
                     tuiAppearance="positive"
-                    >
+                    > 
                         <button
                         type="button"
                         tuiAppearance="positive"
@@ -54,9 +54,99 @@
                         </button>
                     </tui-segmented>
                 </div>
+
+                <div class="m-3">
+                    <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="positive">
+                        <ng-container *ngSwitchCase="0">
+                            <div tuiCardLarge>
+                                <div tuiCell>
+                                    <h2 tuiTitle>
+                                        <tui-rating ngModel="5"
+                                        icon="star-filled" />
+                                    </h2>
+                                    <div><tui-icon icon="@tui.quote" /></div>
+                                </div>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores, eos dolores?
+                                <div tuiCell tuiAppearance="warning">
+                                    <tui-avatar src="@tui.user"/>
+                                    <div tuiTitle>Alberta Moore
+                                        <span tuiSubtitle>
+                                            Businessman
+                                        </span>
+                                    </div>
+        
+                                    <div tuiAccessories>
+                                        <tui-avatar src="@tui.linkedin"/>
+                                        <strong>Entrepreneur</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-container>
+    
+    
+                        <ng-container *ngSwitchCase="1">
+                            <div tuiCardLarge>
+                                <div tuiCell>
+                                    <h2 tuiTitle>
+                                        <tui-rating ngModel="5"
+                                        icon="star-filled" />
+                                    </h2>
+                                    <div><tui-icon icon="@tui.quote" /></div>
+                                </div>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores,two
+                                <div tuiCell>
+                                    <tui-avatar src="@tui.user"/>
+                                    <div tuiTitle>Samuel kiehn
+                                        <span tuiSubtitle>
+                                            LMN Enterprise
+                                        </span>
+                                    </div>
+        
+                                    <div tuiAccessories>
+                                        <tui-avatar src="@tui.linkedin"/>
+                                        <strong>Brand</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-container>
+                        
+                        
+                        <ng-container *ngSwitchCase="2" >
+                            <div tuiCardLarge >
+                                <div tuiCell>
+                                    <h2 tuiTitle>
+                                        <tui-rating ngModel="5"
+                                        icon="star-filled" />
+                                    </h2>
+                                    <div><tui-icon icon="@tui.quote" /></div>
+                                </div>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate three
+                                <div tuiCell>
+                                    <tui-avatar src="@tui.user"/>
+                                    <div tuiTitle>Samuel kiehn
+                                        <span tuiSubtitle>
+                                            LMN Enterprise
+                                        </span>
+                                    </div>
+        
+                                    <div tuiAccessories>
+                                        <tui-avatar src="@tui.linkedin"/>
+                                        <strong>Brand</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-container>
+    
+                    </ng-container>
+                </div>
                 <!-- end of mobile -->
     
                 
+                
+            </div>
+
+            <!-- ddesktop -->
+             <div class="row desktop">
                 <div class="col-md-9">
                     <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="positive">
                         <ng-container *ngSwitchCase="0">
@@ -144,7 +234,7 @@
         
                 
                 
-                <div class="col-md-3 desktop">
+                <div class="col-md-3">
                     <tui-segmented 
                     [(activeItemIndex)]="segmentedIndex"
                     size="l"
@@ -195,7 +285,7 @@
                         </button>
                     </tui-segmented>
                 </div>
-            </div>
+             </div>
         </div>
     </div>
     
