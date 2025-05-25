@@ -23,7 +23,8 @@ import { NgxShinyTextComponent } from '@omnedia/ngx-shiny-text';
     NgxDotpatternComponent,
     TuiScrollbar,
     NgxNeonUnderlineComponent,
-    NgxShinyTextComponent
+    NgxShinyTextComponent,
+    NgxShineBorderComponent
   ],
   
   templateUrl: './services.component.html',
