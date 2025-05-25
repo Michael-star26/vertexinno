@@ -17,7 +17,7 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
     font-weight: bold;
     line-height: max;
     padding: 2px;
-    font-family: cursive;
+    
 }
 
 .dark{
@@ -69,6 +69,7 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
     background: linear-gradient(-45deg,
     transparent 50%, rgb(177, 218, 97) 0%, rgb(255, 255, 255) 50%);
     margin: auto;
+    
   }
   #chip{
     text-transform: uppercase;
@@ -85,6 +86,9 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
       #desktop{
           display: none;
       };
+      .sub{
+        border-radius: 15px 15px 0 0;
+      }
   }
 };
 
@@ -94,5 +98,8 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
       #mobile{
           display: none;
       };
+      header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
+        font-family: cursive;
+      }
   }
 };
