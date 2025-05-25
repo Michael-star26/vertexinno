@@ -167,47 +167,54 @@
                 <p>
                     <span style="font-weight: 400;">At Vertex, we pride ourselves of being a team of experienced developers dedicated to helping clients get tech solutions for their needs</span>
                 </p>
-                <div tuiCardLarge class="stats">
-                    <label tuiCell>
-                        <h3 tuiTitle>
-                            <strong>
-                                Financial Delivered Growth
-                            </strong>
-                        </h3>
-                        <div>
-                            <strong>
-                                99%
-                            </strong>
-                        </div>
-                    </label>
-                    <progress
-                    tuiProgressBar
-                    tuiAppearance="negative"
-                    max="100"
-                    [style.color]="'darkgreen'"
-                    value="96">
-    
-                    </progress>
-    
-                    <label tuiCell>
-                        <h3 tuiTitle>
-                            <strong>
-                                Financial Revenue Growth
-                            </strong>
-                        </h3>
-                        <div>
-                            <strong>
-                                96%
-                            </strong>
-                        </div>
-                    </label>
-                    <progress
-                    tuiProgressBar
-                    tuiAppearance="positive"
-                    max="100"
-                    [style.color]="'darkgreen'"
-                    value="94">
-                    </progress>
+                <div tuiCardLarge class="stats" tuiAppearance="positive">
+                    <tui-chip  appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                        <strong>
+                            Why go Digital with your business?
+                        </strong>
+                    </tui-chip>
+                    <div tuiConnected>
+                        <label tuiCell>
+                            <h3 tuiTitle>
+                                <strong>
+                                    Financial Delivered Growth
+                                </strong>
+                            </h3>
+                            <div>
+                                <strong>
+                                    99%
+                                </strong>
+                            </div>
+                        </label>
+                        <progress
+                        tuiProgressBar
+                        tuiAppearance="negative"
+                        max="100"
+                        [style.color]="'darkgreen'"
+                        value="96">
+        
+                        </progress>
+        
+                        <label tuiCell>
+                            <h3 tuiTitle>
+                                <strong>
+                                    Financial Revenue Growth
+                                </strong>
+                            </h3>
+                            <div>
+                                <strong>
+                                    96%
+                                </strong>
+                            </div>
+                        </label>
+                        <progress
+                        tuiProgressBar
+                        tuiAppearance="positive"
+                        max="100"
+                        [style.color]="'darkgreen'"
+                        value="94">
+                        </progress>
+                    </div>
                     <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;">Request A Consultation</button>
                 </div>
             </div>
@@ -238,7 +245,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <h4 tuiTitle>
-                                <strong>99%</strong>
+                                <strong>70%</strong>
                                 <span tuiSubtitle>
                                     <strong>
                                         Increase Profitability
@@ -248,20 +255,20 @@
                         </div>
                         <div class="col-md-4">
                             <h4 tuiTitle>
-                                <strong>99%</strong>
+                                <strong>75%</strong>
                                 <span tuiSubtitle>
                                     <strong>
-                                        Increase Profitability
+                                        Brand Credibility
                                     </strong>
                                 </span>
                             </h4>
                         </div>
                         <div class="col-md-4">
                             <h4 tuiTitle>
-                                <strong>99%</strong>
+                                <strong>90%</strong>
                                 <span tuiSubtitle>
                                     <strong>
-                                        Increase Profitability
+                                        Customer Convenience
                                     </strong>
                                 </span>
                             </h4>
@@ -271,9 +278,29 @@
                 </div>
             </div>
     
-            <div class="col-md-6 col-12">
-                <div style="opacity: 0.9;background-image: url('https://img.freepik.com/premium-psd/smart-investment-app-ui-kit_553413-1201.jpg?w=740');background-image: url('https://img.freepik.com/premium-psd/smart-investment-app-ui-kit_553413-1201.jpg?w=740');background-position: center;background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: luminosity;height:100%;border:0px solid transparent;filter: drop-shadow(2px 3px 0px white);
-                " >
+            <div class="col-md-6 col-12 " style="background-color: transparent;border: 0px solid transparent;border-color: transparent;" tuiCardLarge tuiAppearance="glass">
+                <div  class="uk-dark uk-dark " id="android" tuiAppearance="positive" style="background-image: url('https://img.freepik.com/premium-psd/smart-investment-app-ui-kit_553413-1201.jpg?w=740'); background-blend-mode: luminosity;opacity: 0.7;border-radius: 15px;">
+                    <div class="contents">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                                        <strong>
+                                            Mobile App Development
+                                        </strong>
+                                    </tui-chip>
+                                    <p style="font-weight: bold;font-size: 20px ;color: whitesmoke;">Need an Android app? We build fast, functional, and user-friendly apps tailored for your business or startup.</p>
+    
+                                    <tui-chip class="m-2" appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                                        <strong>
+                                            Payment Integration
+                                        </strong>
+                                    </tui-chip>
+                                    <p style="font-weight: bold;font-size: 20px ;">Accept payments easily with secure integration for M-Pesa, Stripe, PayPal, and more — directly into your site or app.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
