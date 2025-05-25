@@ -12,6 +12,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { TuiNavigation } from '@taiga-ui/layout';
 import { NavComponent } from '../nav/nav.component';
 import { ArticlesComponent } from '../blogs/articles/articles.component';
+import { ConsultationComponent } from '../consultation/consultation.component';
 
 @Component({
   selector: 'app-main',
@@ -28,7 +29,7 @@ import { ArticlesComponent } from '../blogs/articles/articles.component';
     FooterComponent,
     TuiNavigation,
     NavComponent,
-    ArticlesComponent
+    ConsultationComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.less'
