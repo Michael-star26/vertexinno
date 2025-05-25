@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TuiAppearance, TuiButton, TuiTitle } from '@taiga-ui/core';
-import { TuiAvatar, TuiAvatarStack, TuiChip, TuiProgress } from '@taiga-ui/kit';
+import { TuiAvatar, TuiAvatarOutline, TuiAvatarStack, TuiChip, TuiProgress } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
 import {TuiRipple} from '@taiga-ui/addon-mobile';
 import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
@@ -10,7 +10,7 @@ import { NgxFastMarqueeModule } from "ngx-fast-marquee";
 @Component({
   selector: 'app-about',
   imports: [
-    TuiAvatarStack,
+    TuiAvatarOutline,
     TuiAvatar,
     TuiCardLarge,
     TuiChip,
