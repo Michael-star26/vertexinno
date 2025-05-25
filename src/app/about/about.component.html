@@ -1,264 +1,264 @@
-    <div class="row d-flex " style="border-top:0px solid transparent;background-color: #10291e;">
-        <div class="bg " [style.margin]="'0'" tuiAppearance="positive" style="background-color: #10291e;">
-    
-    <om-dotpattern patternColor="green" tuiAppearance="positive" [style.width]="'100%'" style="border-color: transparent;border-top: 0px solid transparent;border: 0;background-color: #10291e;" class="">
-        <div class="row dots m-2" style="border-top:0px solid transparent;background-color: transparent;">
-            <ngx-fast-marquee 
-                tuiAppearance=""
-                [pauseOnHover]="true"
-                [direction]="'right'"
-                [maskPercentage]="30"
-                [autoFill]="true"
-                [useSystemReducedMotion]="true"
-                (mounted)="true"
-                [speed]="20"
-                
+<div class="row d-flex " style="border-top:0px solid transparent;background-color: #10291e;">
+    <div class="bg " [style.margin]="'0'" tuiAppearance="positive" style="background-color: #10291e;">
 
-                class="marque">
-                    <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover; "></div>
-                    <hr />
-                    <div class="element m-3" tuiAppearance="positive"  tuiCardLarge style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s');background-position:center;background-size: cover;"></div>
-                    <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover;"></div>
-                    <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png');background-position:center;background-size: cover;"></div>
-                    <div class="element m-3" tuiAppearance="icon" tuiCardLarge style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU');background-position:center;background-size: cover;"></div>
-                </ngx-fast-marquee>
-            <div class="col-md-6 col-12 " style="border-top:0px solid transparent;">
-                
-                
+<om-dotpattern patternColor="green" tuiAppearance="positive" [style.width]="'100%'" style="border-color: transparent;border-top: 0px solid transparent;border: 0;background-color: #10291e;" class="">
+    <div class="row dots m-2" style="border-top:0px solid transparent;background-color: transparent;">
+        <ngx-fast-marquee 
+            tuiAppearance=""
+            [pauseOnHover]="true"
+            [direction]="'right'"
+            [maskPercentage]="30"
+            [autoFill]="true"
+            [useSystemReducedMotion]="true"
+            (mounted)="true"
+            [speed]="20"
+            
 
-                <div class="beam-wrapper" >
-                <div class="icon" #RefItem1 tuiAppearance="positive">
-                  <tui-avatar  tuiAvatarpositive src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlXkwasX3CRBW5UwURT9kVjgN21eMyq9nl-BiCVe6PGdZafm_lvlNC1qmkPbrBGxFTJk&usqp=CAU" />
-                </div>
-                <div class="icon" #RefItem2>
-                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s" tuiAvatarpositive />
-                </div>
-                <div class="icon" #RefItem3>
-                    <tui-avatar src="https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp" tuiAvatarpositive />
-                </div>
-                <div class="center">
-                  <div class="" #RefCenter>
-                    <div tuiCardMedium style="background-image: url('calltoaction.webp');opacity: 1;background-size: cover;background-position: center;border-radius: 50px;"></div>
-                  </div>
-                </div>
-                <div class="icon" #RefItem4>
-                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbUy6_kKPlbyMKuGoe_yIue3ujdXLCXZiiw&s" tuiAvatarpositive />
-                </div>
-                <div class="icon" #RefItem5>
-                    <tui-avatar src="https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png" tuiAvatarpositive />
-                </div>
-                <div class="icon" #RefItem6>
-                    <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU" tuiAvatarpositive />
-                </div>
-          
-                <om-connection-beam
-                  [fromRef]="RefItem1"
-                  [toRef]="RefCenter"
-                  [curvature]="-50"
-                  [pathWidth]="4"
-                  [pathColor]="'darkgreen'"
-                  [gradientStartColor]="'#10291e'"
-                  [gradientStopColor]="'green'"
-                ></om-connection-beam>
-                <om-connection-beam
-                  [fromRef]="RefItem2"
-                  [toRef]="RefCenter"
-                  [pathWidth]="4"
-                  [pathColor]="'darkgreen'"
-                  [gradientStartColor]="'yellowgreen'"
-                  [gradientStopColor]="'green'"
-                ></om-connection-beam>
-                <om-connection-beam
-                  [fromRef]="RefItem3"
-                  [toRef]="RefCenter"
-                  [curvature]="40"
-                  [pathWidth]="4"
-                  [pathColor]="'darkgreen'"
-                  [gradientStartColor]="'yellowgreen'"
-                  [gradientStopColor]="'green'"
-                ></om-connection-beam>
-                <om-connection-beam
-                  [fromRef]="RefItem4"
-                  [toRef]="RefCenter"
-                  [reverse]="true"
-                  [curvature]="-50"
-                  [pathWidth]="4"
-                  [pathColor]="'darkgreen'"
-                  [gradientStartColor]="'yellowgreen'"
-                  [gradientStopColor]="'green'"
-                ></om-connection-beam>
-                <om-connection-beam
-                  [fromRef]="RefItem5"
-                  [toRef]="RefCenter"
-                  [reverse]="true"
-                  [pathWidth]="4"
-                  [pathColor]="'darkgreen'"
-                  [gradientStartColor]="'yellowgreen'"
-                  [gradientStopColor]="'green'"
-                ></om-connection-beam>
-                <om-connection-beam
-                  [fromRef]="RefItem6"
-                  [toRef]="RefCenter"
-                  [reverse]="true"
-                  [curvature]="40"
-                  [pathWidth]="4"
-                  [pathColor]="'darkgreen'"
-                  [gradientStartColor]="'yellowgreen'"
-                  [gradientStopColor]="'green'"
-                ></om-connection-beam> 
+            class="marque">
+                <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover; "></div>
+                <hr />
+                <div class="element m-3" tuiAppearance="positive"  tuiCardLarge style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s');background-position:center;background-size: cover;"></div>
+                <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp');background-position:center;background-size: cover;"></div>
+                <div class="element m-3" tuiAppearance="positive" tuiCardLarge style="background-image: url('https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png');background-position:center;background-size: cover;"></div>
+                <div class="element m-3" tuiAppearance="icon" tuiCardLarge style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU');background-position:center;background-size: cover;"></div>
+            </ngx-fast-marquee>
+        <div class="col-md-6 col-12 " style="border-top:0px solid transparent;">
+            
+            
+
+            <div class="beam-wrapper" >
+            <div class="icon" #RefItem1 tuiAppearance="positive">
+              <tui-avatar  tuiAvatarpositive src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlXkwasX3CRBW5UwURT9kVjgN21eMyq9nl-BiCVe6PGdZafm_lvlNC1qmkPbrBGxFTJk&usqp=CAU" />
+            </div>
+            <div class="icon" #RefItem2>
+                <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s" tuiAvatarpositive />
+            </div>
+            <div class="icon" #RefItem3>
+                <tui-avatar src="https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp" tuiAvatarpositive />
+            </div>
+            <div class="center">
+              <div class="" #RefCenter>
+                <div tuiCardMedium style="background-image: url('calltoaction.webp');opacity: 1;background-size: cover;background-position: center;border-radius: 50px;"></div>
               </div>
             </div>
-            <div class="col-md-6 col-12 m-auto">
-                <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+            <div class="icon" #RefItem4>
+                <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbUy6_kKPlbyMKuGoe_yIue3ujdXLCXZiiw&s" tuiAvatarpositive />
+            </div>
+            <div class="icon" #RefItem5>
+                <tui-avatar src="https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png" tuiAvatarpositive />
+            </div>
+            <div class="icon" #RefItem6>
+                <tui-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU" tuiAvatarpositive />
+            </div>
+      
+            <om-connection-beam
+              [fromRef]="RefItem1"
+              [toRef]="RefCenter"
+              [curvature]="-50"
+              [pathWidth]="4"
+              [pathColor]="'darkgreen'"
+              [gradientStartColor]="'#10291e'"
+              [gradientStopColor]="'green'"
+            ></om-connection-beam>
+            <om-connection-beam
+              [fromRef]="RefItem2"
+              [toRef]="RefCenter"
+              [pathWidth]="4"
+              [pathColor]="'darkgreen'"
+              [gradientStartColor]="'yellowgreen'"
+              [gradientStopColor]="'green'"
+            ></om-connection-beam>
+            <om-connection-beam
+              [fromRef]="RefItem3"
+              [toRef]="RefCenter"
+              [curvature]="40"
+              [pathWidth]="4"
+              [pathColor]="'darkgreen'"
+              [gradientStartColor]="'yellowgreen'"
+              [gradientStopColor]="'green'"
+            ></om-connection-beam>
+            <om-connection-beam
+              [fromRef]="RefItem4"
+              [toRef]="RefCenter"
+              [reverse]="true"
+              [curvature]="-50"
+              [pathWidth]="4"
+              [pathColor]="'darkgreen'"
+              [gradientStartColor]="'yellowgreen'"
+              [gradientStopColor]="'green'"
+            ></om-connection-beam>
+            <om-connection-beam
+              [fromRef]="RefItem5"
+              [toRef]="RefCenter"
+              [reverse]="true"
+              [pathWidth]="4"
+              [pathColor]="'darkgreen'"
+              [gradientStartColor]="'yellowgreen'"
+              [gradientStopColor]="'green'"
+            ></om-connection-beam>
+            <om-connection-beam
+              [fromRef]="RefItem6"
+              [toRef]="RefCenter"
+              [reverse]="true"
+              [curvature]="40"
+              [pathWidth]="4"
+              [pathColor]="'darkgreen'"
+              [gradientStartColor]="'yellowgreen'"
+              [gradientStopColor]="'green'"
+            ></om-connection-beam> 
+          </div>
+        </div>
+        <div class="col-md-6 col-12 m-auto">
+            <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                <strong>
+                    Why Choose Vertex?
+                </strong>
+            </tui-chip>
+            <h3 style="font-weight: 700;">
+                <strong>Shaping Tech Futures With Strategic Insights</strong>
+            </h3>
+            <p>
+                <span style="font-weight: 400;">At Vertex, we pride ourselves of being a team of experienced developers dedicated to helping clients get tech solutions for their needs</span>
+            </p>
+            <div tuiCardLarge class="stats" tuiAppearance="positive">
+                <tui-chip  appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
                     <strong>
-                        Why Choose Vertex?
+                        Why go Digital with your business?
                     </strong>
                 </tui-chip>
-                <h3 style="font-weight: 700;">
-                    <strong>Shaping Tech Futures With Strategic Insights</strong>
-                </h3>
-                <p>
-                    <span style="font-weight: 400;">At Vertex, we pride ourselves of being a team of experienced developers dedicated to helping clients get tech solutions for their needs</span>
-                </p>
-                <div tuiCardLarge class="stats" tuiAppearance="positive">
-                    <tui-chip  appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
-                        <strong>
-                            Why go Digital with your business?
-                        </strong>
-                    </tui-chip>
-                    <div tuiConnected>
-                        <label tuiCell>
-                            <h3 tuiTitle>
+                <div tuiConnected>
+                    <label tuiCell>
+                        <h3 tuiTitle>
+                            <strong>
+                                Financial Delivered Growth
+                            </strong>
+                        </h3>
+                        <div>
+                            <strong>
+                                99%
+                            </strong>
+                        </div>
+                    </label>
+                    <progress
+                    tuiProgressBar
+                    tuiAppearance="negative"
+                    max="100"
+                    [style.color]="'darkgreen'"
+                    value="96">
+    
+                    </progress>
+    
+                    <label tuiCell>
+                        <h3 tuiTitle>
+                            <strong>
+                                Financial Revenue Growth
+                            </strong>
+                        </h3>
+                        <div>
+                            <strong>
+                                96%
+                            </strong>
+                        </div>
+                    </label>
+                    <progress
+                    tuiProgressBar
+                    tuiAppearance="positive"
+                    max="100"
+                    [style.color]="'darkgreen'"
+                    value="94">
+                    </progress>
+                </div>
+                <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;">Request A Consultation</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row m-2">
+        <div class="col-md-6 col-12 m-auto desktopstack">
+            <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                <strong>
+                    About Vertex
+                </strong>
+            </tui-chip>
+            <h3>
+                <strong style="font-weight: 700;">
+                    Innovative Solutions For Modern Technological Needs
+                </strong>
+            </h3>
+            <p>
+                <span style="font-weight: 400;">
+                    In today's rapidly evolving tech landscape, businesses and individuals face unprecidented challenges and opportunities
+                </span>
+            </p>
+            <div tuiCardLarge class="stats" style="font-weight: 400;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 tuiTitle>
+                            <strong>70%</strong>
+                            <span tuiSubtitle>
                                 <strong>
-                                    Financial Delivered Growth
+                                    Increase Profitability
                                 </strong>
-                            </h3>
-                            <div>
-                                <strong>
-                                    99%
-                                </strong>
-                            </div>
-                        </label>
-                        <progress
-                        tuiProgressBar
-                        tuiAppearance="negative"
-                        max="100"
-                        [style.color]="'darkgreen'"
-                        value="96">
-        
-                        </progress>
-        
-                        <label tuiCell>
-                            <h3 tuiTitle>
-                                <strong>
-                                    Financial Revenue Growth
-                                </strong>
-                            </h3>
-                            <div>
-                                <strong>
-                                    96%
-                                </strong>
-                            </div>
-                        </label>
-                        <progress
-                        tuiProgressBar
-                        tuiAppearance="positive"
-                        max="100"
-                        [style.color]="'darkgreen'"
-                        value="94">
-                        </progress>
+                            </span>
+                        </h4>
                     </div>
-                    <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;">Request A Consultation</button>
+                    <div class="col-md-4">
+                        <h4 tuiTitle>
+                            <strong>75%</strong>
+                            <span tuiSubtitle>
+                                <strong>
+                                    Brand Credibility
+                                </strong>
+                            </span>
+                        </h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 tuiTitle>
+                            <strong>90%</strong>
+                            <span tuiSubtitle>
+                                <strong>
+                                    Customer Convenience
+                                </strong>
+                            </span>
+                        </h4>
+                    </div>
+                </div>
+                <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;">Get Started Now</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-12 " style="background-color: transparent;border: 0px solid transparent;border-color: transparent;" tuiCardLarge tuiAppearance="glass">
+            
+            <div  class="uk-dark uk-dark " id="android" tuiAppearance="positive" style="background-image: url('https://img.freepik.com/premium-psd/smart-investment-app-ui-kit_553413-1201.jpg?w=740'); background-blend-mode: luminosity;opacity: 0.7;border-radius: 15px;">
+                <div class="contents">
+                    <div class="container">
+                        <div class="row desktopstack">
+                            <div class="col-md-6">
+                                <tui-chip class="m-2" appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                                    <strong>
+                                        Professional dashboards
+                                    </strong>
+                                </tui-chip>
+                                <p style="font-weight: bold;font-size: 18px ;color: white;" tuiFade>We craft professional, responsive dashboards that help you visualize key metrics and manage data with ease.
+                                    <!-- From admin panels to analytics views, our dashboards are tailored for clarity, performance, and mobile responsiveness. -->
+                                    </p>
+
+                                <tui-chip class="m-2" appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                                    <strong>
+                                        Payment Integration
+                                    </strong>
+                                </tui-chip>
+                                <p style="font-weight: bold;font-size: 20px ;">Accept payments easily with secure integration for M-Pesa, Stripe, PayPal, and more — directly into your site or app.</p>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    
-    
-    
-    
-    
-        <div class="row m-2">
-            <div class="col-md-6 col-12 m-auto desktopstack">
-                <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
-                    <strong>
-                        About Vertex
-                    </strong>
-                </tui-chip>
-                <h3>
-                    <strong style="font-weight: 700;">
-                        Innovative Solutions For Modern Technological Needs
-                    </strong>
-                </h3>
-                <p>
-                    <span style="font-weight: 400;">
-                        In today's rapidly evolving tech landscape, businesses and individuals face unprecidented challenges and opportunities
-                    </span>
-                </p>
-                <div tuiCardLarge class="stats" style="font-weight: 400;">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h4 tuiTitle>
-                                <strong>70%</strong>
-                                <span tuiSubtitle>
-                                    <strong>
-                                        Increase Profitability
-                                    </strong>
-                                </span>
-                            </h4>
-                        </div>
-                        <div class="col-md-4">
-                            <h4 tuiTitle>
-                                <strong>75%</strong>
-                                <span tuiSubtitle>
-                                    <strong>
-                                        Brand Credibility
-                                    </strong>
-                                </span>
-                            </h4>
-                        </div>
-                        <div class="col-md-4">
-                            <h4 tuiTitle>
-                                <strong>90%</strong>
-                                <span tuiSubtitle>
-                                    <strong>
-                                        Customer Convenience
-                                    </strong>
-                                </span>
-                            </h4>
-                        </div>
-                    </div>
-                    <button tuiButton tuiRipple [style.background-color]="'yellowgreen'" appearance="positive" style="text-transform: uppercase;color: black;">Get Started Now</button>
-                </div>
-            </div>
-    
-            <div class="col-md-6 col-12 " style="background-color: transparent;border: 0px solid transparent;border-color: transparent;" tuiCardLarge tuiAppearance="glass">
-                
-                <div  class="uk-dark uk-dark " id="android" tuiAppearance="positive" style="background-image: url('https://img.freepik.com/premium-psd/smart-investment-app-ui-kit_553413-1201.jpg?w=740'); background-blend-mode: luminosity;opacity: 0.7;border-radius: 15px;">
-                    <div class="contents">
-                        <div class="container">
-                            <div class="row desktopstack">
-                                <div class="col-md-6">
-                                    <tui-chip class="m-2" appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
-                                        <strong>
-                                            Professional dashboards
-                                        </strong>
-                                    </tui-chip>
-                                    <p style="font-weight: bold;font-size: 18px ;color: white;" tuiFade>We craft professional, responsive dashboards that help you visualize key metrics and manage data with ease.
-                                        <!-- From admin panels to analytics views, our dashboards are tailored for clarity, performance, and mobile responsiveness. -->
-                                        </p>
-    
-                                    <tui-chip class="m-2" appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
-                                        <strong>
-                                            Payment Integration
-                                        </strong>
-                                    </tui-chip>
-                                    <p style="font-weight: bold;font-size: 20px ;">Accept payments easily with secure integration for M-Pesa, Stripe, PayPal, and more — directly into your site or app.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </om-dotpattern>
+    </div>
+</om-dotpattern>
 </div>
