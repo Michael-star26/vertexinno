@@ -1,6 +1,7 @@
 import { NgSwitch, NgSwitchCase } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NgxShineBorderComponent } from '@omnedia/ngx-shine-border';
 import { TuiAppearance, TuiButton, TuiIcon, TuiTitle } from '@taiga-ui/core';
 import { TuiAvatar, TuiCarousel, TuiChip, TuiRating, TuiSegmented } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
@@ -23,7 +24,8 @@ import { NgxFastMarqueeModule } from "ngx-fast-marquee"
     TuiIcon,
     NgxFastMarqueeModule,
     TuiButton,
-    TuiChip
+    TuiChip,
+    NgxShineBorderComponent
   ],
   changeDetection:ChangeDetectionStrategy.OnPush,
   templateUrl: './testimonials.component.html',
