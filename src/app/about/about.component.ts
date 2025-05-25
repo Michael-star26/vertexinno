@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TuiAppearance, TuiButton, TuiIcon, TuiTitle } from '@taiga-ui/core';
-import { TuiAvatar, TuiAvatarOutline, TuiAvatarStack, TuiBadgedContent, TuiChip, TuiConnected, TuiProgress } from '@taiga-ui/kit';
+import { TuiAppearance, TuiButton, tuiFadeInBottom, TuiIcon, TuiTitle } from '@taiga-ui/core';
+import { TuiAvatar, TuiAvatarOutline, TuiAvatarStack, TuiBadgedContent, TuiChip, TuiConnected, TuiFade, TuiProgress } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiCell } from '@taiga-ui/layout';
 import {TuiRipple} from '@taiga-ui/addon-mobile';
 import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
@@ -17,6 +17,7 @@ import { NgxFastMarqueeModule } from "ngx-fast-marquee";
     TuiProgress,
     TuiTitle,
     TuiCell,
+    TuiFade,
     TuiAppearance,
     TuiButton,
     TuiRipple,

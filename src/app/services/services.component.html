@@ -1,14 +1,10 @@
 <div class="section" style="background-color: #10291e;">
   <div class=" desktop" id="desktop" style="background-image: url(coding.jpg);background-position: center;background-size: cover;">
     <div class="sub">
-      <tui-chip id="chip"  [size]="'s'">
-        <strong>More Services</strong>
+      <tui-chip class="m-2" id="chip"  [size]="'s'">
+        <strong>Core Services</strong>
       </tui-chip>
-      <h3 tuiHeader [style.color]="'black'">
-        <strong>
-          Unlock Your Tech potential
-        </strong>
-      </h3>
+  
       <div class="row justify-content-center d-flex" [style.color]="'black'" >      
         <div class="col-md-4  text-center">         
           <div tuiCardLarge class="m-2" tuiAppearance="warning">
@@ -101,10 +97,10 @@
   <!-- mobile -->
   <div class="content mobile" id="mobile" style="">
     <div class="sub">
-      <tui-chip id="chip"  [size]="'s'">
-        <strong>More Services</strong>
+      <tui-chip id="chip" class="m-2"  [size]="'s'">
+        <strong>Core Services</strong>
       </tui-chip>
-
+  
       <div class="row justify-content-center d-flex" [style.color]="'black'" >      
         <div class="col-md-4  text-center">         
           <div tuiCardLarge class="m-2" tuiAppearance="warning">
@@ -130,7 +126,7 @@
                 Mobile App Development
               </strong>
               <span tuiSubtitle>
-                Our team builds high-performance mobile applications for both Android and iOS platforms
+                Our team builds high-performance mobile applications for both Android and iOS platforms — ideal for customer engagement, productivity, or internal operations.
               </span>
             </h3>
           </div>
@@ -139,17 +135,19 @@
         
         <div class="col-md-4 text-center">
           <div class="container-wrapper" tuiAppearance="warning" tuiCardLarge>
-            <header tuiHeader>
-              <tui-avatar tuiAvatarOutline src="@tui.user" />
-            </header>
-            <h3 tuiTitle>Custom Software Solutions
-              <span tuiSubtitle>
-                From workflow automation to specialized business tools, we develop custom software tailored to your specific operational needs.
-              </span>
-            </h3>
-            <div  tuiCardLarge class="m-auto text-light" style="color: whitesmoke;" tuiAppearance="glass">
-              <em style="color: white;">We help streamline operations by connecting your existing tools, platforms, and services into a unified, efficient ecosystem.</em>
-            </div>
+            <tui-scrollbar>
+              <header tuiHeader>
+                <tui-avatar tuiAvatarOutline src="@tui.user" />
+              </header>
+              <h3 tuiTitle>Custom Software Solutions
+                <span tuiSubtitle>
+                  From workflow automation to specialized business tools, we develop custom software tailored to your specific operational needs.
+                </span>
+              </h3>
+              <div  tuiCardLarge class="m-auto" tuiAppearance="glass">
+                <p>We help streamline operations by connecting your existing tools, platforms, and services into a unified, efficient ecosystem.</p>
+              </div>
+            </tui-scrollbar>
           </div>    
         </div>
   

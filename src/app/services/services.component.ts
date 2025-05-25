@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TuiAppearance, TuiTitle } from '@taiga-ui/core';
+import { TuiAppearance, TuiScrollbar, TuiTitle } from '@taiga-ui/core';
 import { TuiAvatar, TuiAvatarOutline, TuiChip } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCardMedium, TuiHeader } from '@taiga-ui/layout';
 import { NgxTracingBeamComponent } from '@omnedia/ngx-tracing-beam';
@@ -18,10 +18,13 @@ import { NgxDotpatternComponent } from '@omnedia/ngx-dotpattern';
     TuiChip,
     NgxTracingBeamComponent,
     NgxShineBorderComponent,
-    NgxDotpatternComponent
+    NgxDotpatternComponent,
+    TuiScrollbar
   ],
+  
   templateUrl: './services.component.html',
-  styleUrl: './services.component.less'
+  styleUrl: './services.component.less',
+  
 })
 export class ServicesComponent {
   
