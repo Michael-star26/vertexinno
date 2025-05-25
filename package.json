@@ -26,6 +26,7 @@
     "@omnedia/ngx-neon-underline": "^2.0.0",
     "@omnedia/ngx-retro-grid": "^2.0.0",
     "@omnedia/ngx-shine-border": "^2.0.0",
+    "@omnedia/ngx-shiny-text": "^2.0.0",
     "@omnedia/ngx-starry-sky": "^2.0.0",
     "@omnedia/ngx-timeline": "^2.0.1",
     "@omnedia/ngx-tracing-beam": "^2.0.1",
