@@ -1,12 +1,89 @@
-// /* You can add global styles to this file, and also import other style files */
-// body{
-//     filter: drop-shadow(3px 2px 1px rgb(167, 250, 1)) contrast(100%) hue-rotate(305deg);
-//     width: 100%;
-//     overflow-x: hidden;
-// }
+/* You can add global styles to this file, and also import other style files */
+body,html{
+    // filter: drop-shadow(3px 2px 1px rgb(167, 250, 1)) contrast(100%) hue-rotate(305deg);  
+    overflow-x: hidden;
+    background-color: #10291e;
+    p,a,div,strong[tuiCardLarge]{
+      color:aliceblue
+    }
+    p{
+      font-size: 24px;
+    }
+    h{
+      font-size: 32px;
+      font-weight: bold;
+    }
+    a{
+      font-size: 18px;
+    }
+    button,[tuiButton],[tuiIconButton]{
+      background-color: transparent;
+    }
+    tui-chip{
+      background-color: #A1EF67;
+      color: white;
+
+    }
+
+    scrollbar-color: lime;
+    scroll-behavior: smooth;
+}
+html{
+  position: relative;
+  scrollbar-color: lime;
+    scroll-behavior: smooth;
+}
+.div,section,h,[tuiCardLarge]{
+  scrollbar-color: lime;
+    scroll-behavior: smooth;
+}
 
 @media only screen and(min-width:600px){
     header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle],strong,button,[tuiRipple]{
         font-family: cursive,serif;
     }
 }
+
+// looader
+.loader {
+    font-weight: bold;
+    font-family: monospace;
+    display: inline-grid;
+    font-size: 20px;
+    margin:auto
+  }
+  .loader:before,
+  .loader:after {
+    content:"VERTEX";
+    grid-area: 1/1;
+    -webkit-mask-size: 100% 5px,100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    animation: l35-1 1s infinite;
+  }
+  .loader:before {
+    -webkit-mask-image:
+      linear-gradient(red 0 0),
+      linear-gradient(red 0 0);
+  }
+  .loader:after {
+    -webkit-mask-image:
+      linear-gradient(red 0 0);
+    animation:
+      l35-1  1s infinite,
+      l35-2 .2s infinite cubic-bezier(0.5,200,0.5,-200);
+  }
+  
+  @keyframes l35-1{
+    0%   {-webkit-mask-position:0 20px,0 0}
+    20%  {-webkit-mask-position:0 8px ,0 0}
+    40%  {-webkit-mask-position:0 100%,0 0}
+    60%  {-webkit-mask-position:0 3px ,0 0}
+    80%  {-webkit-mask-position:0 15px,0 0}
+    100% {-webkit-mask-position:0 0   ,0 0}
+  }
+  @keyframes l35-2{
+    100% {transform:translate(0.1px)} 
+  }
+  

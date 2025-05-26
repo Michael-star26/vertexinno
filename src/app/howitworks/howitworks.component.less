@@ -8,3 +8,88 @@
 //     height: 450px;
 
 //   }
+.chip{
+    text-transform: uppercase;
+    color: black;
+    background-color: yellowgreen;
+}
+.col-md-3{
+    gap: 1;
+    opacity: 0.8;
+    background-color: rgb(165, 231, 98);
+}
+.bg{
+    background: rgb(186,246,27);
+background: linear-gradient(210deg,transparent 50%, rgb(220, 238, 171) 0%, rgba(184,249,31,1) 0%, rgba(255,255,255,1) 50%);border: 0px solid transparent;
+}
+.card-header{
+    width: fit-content;
+}
+
+
+
+.timeline-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  
+
+  .timeline-content ul {
+    list-style-type: circle;
+  }
+
+  .timeline-content li {
+    margin-bottom: 0.5rem;
+  }
+  .custom-timeline .om-timeline-entry-header .om-timeline-circle {
+    background-color: #4caf50;
+  }
+  .card{
+    --tui-background-base:red
+  }
+
+
+  @media screen{
+    @media (max-width:600px){
+      .fw-bold {
+        inline-size: 100%;
+      }
+      .timeline-title {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .timeline-content {
+    font-size: 18px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+    }
+};
+
+@media screen{
+  @media (min-width:601px){
+    .fw-bold {
+      inline-size: 70%;
+    }
+    .timeline-title {
+      font-size: 3rem;
+      color: white;
+      font-weight: bold;
+    }
+  
+    .timeline-content {
+      font-size: 18px;
+      color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .mobilestack{
+        display: none;
+      }
+  }
+};
+  

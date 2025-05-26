@@ -1,144 +1,321 @@
-<div  tuiCardLarge class="testimonial" tuiAppearance="positive" style="border-color: transparent;box-shadow: none;"> 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="positive">
-                    <ng-container *ngSwitchCase="0">
-                        <div tuiCardLarge>
-                            <div tuiCell>
-                                <h2 tuiTitle>
-                                    <tui-rating ngModel="5"
-                                    icon="star-filled" />
-                                </h2>
-                                <div><tui-icon icon="@tui.quote" /></div>
-                            </div>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores, eos dolores?
-                            <div tuiCell tuiAppearance="warning">
-                                <tui-avatar src="@tui.user"/>
-                                <div tuiTitle>Alberta Moore
-                                    <span tuiSubtitle>
-                                        Businessman
-                                    </span>
-                                </div>
+<div class="section" style="background-color: #10291e;">
+    <div class="testimonial" tuiAppearance="" style="border-color: transparent;box-shadow: none;"> 
+        <div class="">
+            <div class=" mobile">
+                <!-- mobile -->
+                <div class=" m-auto" class="">
+                    <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;" class="mx-5 mb-3 mt-3">
+                        <strong>
+                            Testimonials
+                        </strong>
+                    </tui-chip>
+                    <tui-segmented 
+                    [(activeItemIndex)]="segmentedIndex"
+                    size="l"
+                    [style.flex-direction]="'row'"
+                    [style.width]="'fit-content'"
+                    style="float: inline-end;"
+                    tuiAppearance=""
+                    style="overflow: scroll;zoom:60%"
+                    class="m-auto"
+                    > 
+                        <button
+                        type="button"
+                        tuiAppearance="positive"
+                        class="m-2"
+                        >
+                            <tui-avatar
+                                size="xs"
+                                src="https://avatars.githubusercontent.com/u/11832552"/>
+                                <h3 tuiTitle><strong>Alberta Moore</strong>
+                                    <span tuiSubtitle>Businessman</span>
+                                </h3>
+                        </button>
     
-                                <div tuiAccessories>
-                                    <tui-avatar src="@tui.linkedin"/>
-                                    <strong>Entrepreneur</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </ng-container>
+                        <button
+                        type="button"
+                        tuiAppearance="positive"
+                        class="m-2"
+                        >
+                            <tui-avatar
+                                size="xs"
+                                src="https://avatars.githubusercontent.com/u/11832552"/>
+                                <h3 tuiTitle> <strong>Lawa Bogisich</strong>
+                                    <span tuiSubtitle>UVW Company</span>
+                                </h3>
+                        </button>
+    
+    
+                        
+                        <button
+                        type="button"
+                        tuiAppearance="positive"
+                        class="m-2"
+                        >
+                            <tui-avatar
+                                size="xs"
+                                src="https://avatars.githubusercontent.com/u/11832552"/>
+                                <h3 tuiTitle><strong>Samuel kiehn</strong>
+                                    <span tuiSubtitle>LMN Enterprises</span>
+                                </h3>
+                        </button>
+                    </tui-segmented>
+                </div> 
 
-
-                    <ng-container *ngSwitchCase="1">
-                        <div tuiCardLarge>
-                            <div tuiCell>
-                                <h2 tuiTitle>
-                                    <tui-rating ngModel="5"
-                                    icon="star-filled" />
-                                </h2>
-                                <div><tui-icon icon="@tui.quote" /></div>
-                            </div>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores,two
-                            <div tuiCell>
-                                <tui-avatar src="@tui.user"/>
-                                <div tuiTitle>Samuel kiehn
-                                    <span tuiSubtitle>
-                                        LMN Enterprise
-                                    </span>
-                                </div>
-    
-                                <div tuiAccessories>
-                                    <tui-avatar src="@tui.linkedin"/>
-                                    <strong>Brand</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </ng-container>
-                    
-                    
-                    <ng-container *ngSwitchCase="2">
-                        <div tuiCardLarge>
-                            <div tuiCell>
-                                <h2 tuiTitle>
-                                    <tui-rating ngModel="5"
-                                    icon="star-filled" />
-                                </h2>
-                                <div><tui-icon icon="@tui.quote" /></div>
-                            </div>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate three
-                            <div tuiCell>
-                                <tui-avatar src="@tui.user"/>
-                                <div tuiTitle>Samuel kiehn
-                                    <span tuiSubtitle>
-                                        LMN Enterprise
-                                    </span>
-                                </div>
-    
-                                <div tuiAccessories>
-                                    <tui-avatar src="@tui.linkedin"/>
-                                    <strong>Brand</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </ng-container>
-
-                </ng-container>
-            </div>
-    
+                <div class="m-3">
+                    <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="positive">
+                        <ng-container *ngSwitchCase="0">
+                            <om-shine-border borderColor="transparent" [borderRadius]="'15px'" gradientColorStart="green" gradientColorMiddle="lime" gradientColorEnd="yellowgreen"  tuiAppearance="glass">
+                                <div class="container-wrapper" tuiAppearance="glass">
+                                    <div tuiCell>
+                                        <h2 tuiTitle>
+                                            <tui-rating disabled="true" class="rating"  ngModel="5"
+                                            icon="star-filled" />
+                                        </h2>
+                                        <div><tui-icon icon="@tui.quote" /></div>
+                                    </div>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores, eos dolores?
+                                    <div tuiCell tuiAppearance="positive">
+                                        <tui-avatar appearance="positive" src="@tui.user"/>
+                                        <div tuiTitle>Alberta Moore
+                                            <span tuiSubtitle>
+                                                Businessman
+                                            </span>
+                                        </div>
             
-            
-            <div class="col-md-3">
-                <tui-segmented 
-                [(activeItemIndex)]="segmentedIndex"
-                size="l"
-                [style.flex-direction]="'column'"
-                [style.width]="'fit-content'"
-                style="float: inline-end;"
-                tuiAppearance="positive"
-                >
-                    <button
-                    type="button"
-                    tuiAppearance="positive"
-                    class="m-2"
-                    >
-                        <tui-avatar
-                            size="xs"
-                            src="https://avatars.githubusercontent.com/u/11832552"/>
-                            <h3 tuiTitle><strong>Alberta Moore</strong>
-                                <span tuiSubtitle>Businessman</span>
-                            </h3>
-                    </button>
+                                        <div tuiAccessories>
+                                            <tui-avatar src="@tui.linkedin"/>
+                                            <strong>Entrepreneur</strong>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <button
-                    type="button"
-                    tuiAppearance="positive"
-                    class="m-2"
-                    >
-                        <tui-avatar
-                            size="xs"
-                            src="https://avatars.githubusercontent.com/u/11832552"/>
-                            <h3 tuiTitle> <strong>Lawa Bogisich</strong>
-                                <span tuiSubtitle>UVW Company</span>
-                            </h3>
-                    </button>
-
-
+                            </om-shine-border>
+                        </ng-container>
+    
                     
-                    <button
-                    type="button"
-                    tuiAppearance="positive"
-                    class="m-2"
-                    >
-                        <tui-avatar
-                            size="xs"
-                            src="https://avatars.githubusercontent.com/u/11832552"/>
-                            <h3 tuiTitle><strong>Samuel kiehn</strong>
-                                <span tuiSubtitle>LMN Enterprises</span>
-                            </h3>
-                    </button>
-                </tui-segmented>
+                        <ng-container *ngSwitchCase="1">
+                            <om-shine-border borderColor="transparent" [borderRadius]="'15px'" gradientColorStart="green" gradientColorMiddle="lime" gradientColorEnd="yellowgreen"  tuiAppearance="glass">
+                                <div class="container-wrapper" tuiAppearance="glass">
+                                    <div tuiCell>
+                                        <h2 tuiTitle>
+                                            <tui-rating disabled="true" ngModel="5"
+                                            icon="star-filled" />
+                                        </h2>
+                                        <div><tui-icon icon="@tui.quote" /></div>
+                                    </div>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores,two
+                                    <div tuiCell tuiAppearance="positive">
+                                        <tui-avatar appearance="positive" src="@tui.user"/>
+                                        <div tuiTitle>Samuel kiehn
+                                            <span tuiSubtitle>
+                                                LMN Enterprise
+                                            </span>
+                                        </div>
+            
+                                        <div tuiAccessories>
+                                            <tui-avatar src="@tui.linkedin"/>
+                                            <strong>Brand</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </om-shine-border>
+                        </ng-container>
+                        
+                        
+                        <ng-container *ngSwitchCase="2" >
+                            <om-shine-border borderColor="transparent" [borderRadius]="'15px'" gradientColorStart="green" gradientColorMiddle="lime" gradientColorEnd="yellowgreen"  tuiAppearance="glass">
+                                <div class="container-wrapper" tuiAppearance="glass">
+                                    <div tuiCell>
+                                        <h2 tuiTitle>
+                                            <tui-rating disabled="true" ngModel="5"
+                                            icon="star-filled" />
+                                        </h2>
+                                        <div><tui-icon icon="@tui.quote" /></div>
+                                    </div>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate three
+                                    <div tuiCell tuiAppearance="positive">
+                                        <tui-avatar appearance="positive" src="@tui.user"/>
+                                        <div tuiTitle>Samuel kiehn
+                                            <span tuiSubtitle>
+                                                LMN Enterprise
+                                            </span>
+                                        </div>
+            
+                                        <div tuiAccessories>
+                                            <tui-avatar src="@tui.linkedin"/>
+                                            <strong>Brand</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </om-shine-border>
+                        </ng-container>
+    
+                    </ng-container>
+                </div>
+                <!-- end of mobile -->
+    
+                
+                
             </div>
+            
+            <!-- ddesktop -->
+            
+             <div class="desktop">
+                <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;width: fit-content;" class="mx-5 mb-3 mt-2">
+                    <strong>
+                        Testimonials
+                    </strong>
+                </tui-chip>
+                <div class="row  m-3">
+                
+                    <div class="col-md-9">
+                        <ng-container [ngSwitch]="segmentedIndex" tuiAppearance="">
+                            <ng-container *ngSwitchCase="0">
+                                <om-shine-border borderColor="transparent" [borderRadius]="'15px'" gradientColorStart="green" gradientColorMiddle="lime" gradientColorEnd="yellowgreen"  tuiAppearance="glass">
+                                    <div class="container-wrapper" tuiAppearance="glass">
+                                        <div tuiCell>
+                                            <h2 tuiTitle>
+                                                <tui-rating disabled="true" disabled="true" class="rating"  ngModel="5"
+                                                icon="star-filled" />
+                                            </h2>
+                                            <div><tui-icon icon="@tui.quote" /></div>
+                                        </div>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores, eos dolores?
+                                        <div tuiCell tuiAppearance="positive" class="m-2">
+                                            <tui-avatar appearance="positive" src="@tui.user"/>
+                                            <div tuiTitle>Alberta Moore
+                                                <span tuiSubtitle>
+                                                    Businessman
+                                                </span>
+                                            </div>
+                
+                                            <div tuiAccessories>
+                                                <tui-avatar src="@tui.linkedin"/>
+                                                <strong>Entrepreneur</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </om-shine-border>
+                            </ng-container>
+        
+        
+                            <ng-container *ngSwitchCase="1">
+                                <om-shine-border borderColor="transparent" [borderRadius]="'15px'" gradientColorStart="green" gradientColorMiddle="lime" gradientColorEnd="yellowgreen"  tuiAppearance="glass">
+                                    <div class="container-wrapper" tuiAppearance="glass">
+                                        <div tuiCell>
+                                            <h2 tuiTitle>
+                                                <tui-rating disabled="true" ngModel="5"
+                                                icon="star-filled" />
+                                            </h2>
+                                            <div><tui-icon icon="@tui.quote" /></div>
+                                        </div>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate maiores,two
+                                        <div tuiCell tuiAppearance="positive">
+                                            <tui-avatar appearance="positive" src="@tui.user"/>
+                                            <div tuiTitle>Samuel kiehn
+                                                <span tuiSubtitle>
+                                                    LMN Enterprise
+                                                </span>
+                                            </div>
+                
+                                            <div tuiAccessories>
+                                                <tui-avatar src="@tui.linkedin"/>
+                                                <strong>Brand</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </om-shine-border>
+                            </ng-container>
+                            
+                            
+                            <ng-container *ngSwitchCase="2" >
+                                <om-shine-border borderColor="transparent" [borderRadius]="'15px'" gradientColorStart="green" gradientColorMiddle="lime" gradientColorEnd="yellowgreen"  tuiAppearance="glass">
+                                    <div class="container-wrapper" tuiAppearance="glass">
+                                        <div tuiCell>
+                                            <h2 tuiTitle>
+                                                <tui-rating disabled="true" ngModel="5"
+                                                icon="star-filled" />
+                                            </h2>
+                                            <div><tui-icon icon="@tui.quote" /></div>
+                                        </div>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quaerat minima earum esse animi quidem doloremque eum vero minus repellendus, distinctio, ipsa optio illo modi quas voluptate three
+                                        <div tuiCell tuiAppearance="positive">
+                                            <tui-avatar appearance="positive" src="@tui.user"/>
+                                            <div tuiTitle>Samuel kiehn
+                                                <span tuiSubtitle>
+                                                    LMN Enterprise
+                                                </span>
+                                            </div>
+                
+                                            <div tuiAccessories>
+                                                <tui-avatar src="@tui.linkedin"/>
+                                                <strong>Brand</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </om-shine-border>
+                            </ng-container>
+        
+                        </ng-container>
+                    </div>
+            
+                    
+                    
+                    <div class="col-md-3">
+                        <tui-segmented 
+                        [(activeItemIndex)]="segmentedIndex"
+                        size="l"
+                        [style.flex-direction]="'column'"
+                        [style.width]="'fit-content'"
+                        style="float: inline-end;"
+                        tuiAppearance="positive"
+                        >
+                            <button
+                            type="button"
+                            tuiAppearance="positive"
+                            class="m-2"
+                            >
+                                <tui-avatar
+                                    size="xs"
+                                    src="https://avatars.githubusercontent.com/u/11832552"/>
+                                    <h3 tuiTitle><strong>Alberta Moore</strong>
+                                        <span tuiSubtitle>Businessman</span>
+                                    </h3>
+                            </button>
+        
+                            <button
+                            type="button"
+                            tuiAppearance="positive"
+                            class="m-2"
+                            >
+                                <tui-avatar
+                                    size="xs"
+                                    src="https://avatars.githubusercontent.com/u/11832552"/>
+                                    <h3 tuiTitle> <strong>Lawa Bogisich</strong>
+                                        <span tuiSubtitle>UVW Company</span>
+                                    </h3>
+                            </button>
+        
+        
+                            
+                            <button
+                            type="button"
+                            tuiAppearance="positive"
+                            class="m-2"
+                            >
+                                <tui-avatar
+                                    size="xs"
+                                    src="https://avatars.githubusercontent.com/u/11832552"/>
+                                    <h3 tuiTitle><strong>Samuel kiehn</strong>
+                                        <span tuiSubtitle>LMN Enterprises</span>
+                                    </h3>
+                            </button>
+                        </tui-segmented>
+                    </div>
+                 </div>
+             </div>
         </div>
     </div>
+    
 </div>

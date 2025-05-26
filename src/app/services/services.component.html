@@ -1,104 +1,250 @@
-<!-- <om-tracing-beam
->
+<div class="section" style="background-color: #10291e;">
+  <div class=" desktop" id="desktop" style="background-image: url(coding.jpg);background-position: center;background-size: cover;">
+    <div class="sub">
+      <tui-chip class="m-2" id="chip"  [size]="'s'">
+        <strong>Core Services</strong>
+      </tui-chip>
   
-</om-tracing-beam> -->
-<div class=" content" style="opacity: 0.7;background-image: url(coding.webp);background-image: url(coding.webp);background-position: center;background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: overlay;height:100%;">
-  <div style="background: rgb(222, 250, 144);background: linear-gradient(-45deg,transparent 50%, rgb(177, 218, 97) 0%, rgb(255, 255, 255) 50%);">
-    <tui-chip  [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;width: fit-content;">
-      <strong>Our Services</strong>
-    </tui-chip>
-    <h3 tuiHeader [style.color]="'black'">
-      <strong>
-        Unlock Your Tech potential
-      </strong>
-    </h3>
-    <div class="row justify-content-center d-flex" [style.color]="'black'" >      
-      <div class="col-md-4  text-center">         
-        <div tuiCardLarge class="m-2" tuiAppearance="flat">
-          <header tuiHeader>
-            <tui-avatar tuiAvatarOutline src="@tui.user" />
-          </header>
-          <h3 tuiTitle>
-            <strong>
-              Investment Management
-            </strong>
-            <span tuiSubtitle>
-              Investment helps one secure their future in different ways. It may be in terms of pension, retirement plan etc.
-            </span>
-          </h3>
-        </div>
-
-        <div tuiCardLarge class="m-2" tuiAppearance="flat">
-          <header tuiHeader>
-            <tui-avatar tuiAvatarOutline src="@tui.user" />
-          </header>
-          <h3 tuiTitle>
-            <strong>
-              Investment Management
-            </strong>
-            <span tuiSubtitle>
-              Investment helps one secure their future in different ways. It may be in terms of pension, retirement plan etc.
-            </span>
-          </h3>
-        </div>
-      </div>
-
-      
-      <div class="col-md-4 text-center">
-        <om-shine-border class="" tuiCardLarge tuiAppearance="" [style.background-color]="'transparent'" 
-        gradientColorStart="darkgreen"
-        gradientColorMiddle="lime"
-        gradientColorEnd="teal"
-        borderColor="white"
-        style="border:  5px;"
-        >
-          <div class="container-wrapper">
+      <div class="row justify-content-center d-flex" [style.color]="'black'" >      
+        <div class="col-md-4  text-center">         
+          <div tuiCardLarge class="m-2" tuiAppearance="warning">
             <header tuiHeader>
               <tui-avatar tuiAvatarOutline src="@tui.user" />
             </header>
-            <h3 tuiTitle>Wise Consulting
+            <h3 tuiTitle>
+              <strong>
+                Web Development
+              </strong>
+              <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
               <span tuiSubtitle>
-                Investment helps one secure their future in different ways. It may be in terms of pension, retirement plan etc.
-                Investment helps one secure their future in different ways. It may be in terms of pension, retirement plan etc.
+                We design and develop modern, responsive websites that reflect your brand and deliver a seamless user experience across all devices.
               </span>
             </h3>
-            <div  tuiCardMedium class="m-auto" tuiAppearance="flat">
-              <p>Hello</p>
-            </div>
           </div>
-      </om-shine-border>
+  
+          <div tuiCardLarge class="m-2" tuiAppearance="warning">
+            <header tuiHeader>
+              <tui-avatar tuiAvatarOutline src="@tui.user" />
+            </header>
+            <h3 tuiTitle>
+              <strong>
+                Mobile App Development
+              </strong>
+              <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+              <span tuiSubtitle>
+                Our team builds high-performance mobile applications for both Android and iOS platforms — ideal for customer engagement, productivity, or internal operations.
+              </span>
+            </h3>
+          </div>
+        </div>
+  
+        
+        <div class="col-md-4 text-center">
+          <div class="container-wrapper" tuiAppearance="warning" tuiCardLarge>
+            <header tuiHeader>
+              <tui-avatar tuiAvatarOutline src="@tui.user" />
+            </header>
+            <h3 tuiTitle>
+              <strong>Custom Software Solutions</strong>
+              <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+              <span tuiSubtitle>
+                From workflow automation to specialized business tools, we develop custom software tailored to your specific operational needs.
+              </span>
+            </h3>
+            <div  tuiCardLarge class="m-auto" tuiAppearance="glass">
+              <om-shiny-text style="font-weight: bolder;" shimmerWidth="100px" shimmerColor="lime" textColor="black" text="We help streamline operations by connecting your existing tools, platforms, and services into a unified, efficient ecosystem."/>
+            </div>
+          </div>    
+        </div>
+  
+  
         
         
-      </div>
-
-
-      
-      
-      <div class="col-md-4  text-center" >       
+        <div class="col-md-4  text-center" >       
+          <div tuiCardLarge class="m-2" tuiAppearance="floating">
+            <header tuiHeader class="dark" style="justify-content: center;">
+              <tui-avatar tuiAvatarOutline src="@tui.user" />
+            </header>
+            <h3 tuiTitle class="dark">
+              <strong>Business Dashboards & Reporting Tools</strong>
+              <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+              <span tuiSubtitle class="dark">
+                Gain visibility into your business with interactive dashboards that simplify data and support better decision-making.
+              </span>
+            </h3>
+        </div>
+  
+  
         <div tuiCardLarge class="m-2" tuiAppearance="floating">
-          <header tuiHeader class="dark" style="justify-content: center;">
+          <header tuiHeader class="dark">
             <tui-avatar tuiAvatarOutline src="@tui.user" />
           </header>
-          <h3 tuiTitle class="dark">Investment Management
-            <span tuiSubtitle class="dark">
-              Investment helps one secure their future in different ways. It may be in terms of pension, retirement plan etc.
+          <h3 tuiTitle class="dark">
+            <strong>Ongoing Support & Maintenance</strong>
+            <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+            <span tuiSubtitle>
+              Your growth doesn’t stop — and neither do we. Count on reliable technical support, updates, and enhancements as your business evolves.
             </span>
           </h3>
       </div>
-
-
-      <div tuiCardLarge class="m-2" tuiAppearance="flat">
-        <header tuiHeader class="dark">
-          <tui-avatar tuiAvatarOutline src="@tui.user" />
-        </header>
-        <h3 tuiTitle class="dark">Investment Management
-          <span tuiSubtitle>
-            Investment helps one secure their future in different ways. It may be in terms of pension, retirement plan etc.
-          </span>
-        </h3>
-    </div>
-      
+        
+      </div>
     </div>
   </div>
+  </div>
+
+  <om-tracing-beam
+  [tuiAppearance]="'neutral'"
+  [gradientBottom]="'yellowgreen'"
+  [gradientTop]="'white'"
+  [gradientMiddle]="'lime'"
+  [strokeColor]="'green'"
+  class="trace"
+  >
+     <!--  -->
+  <!-- mobile -->
+  <div class="content mobile" id="mobile" style="">
+    <div class="sub">
+      <tui-chip id="chip" class="m-2"  [size]="'s'">
+        <strong>Core Services</strong>
+      </tui-chip>
+  
+      <div class="row justify-content-center d-flex" [style.color]="'black'" >      
+        <div class="col-md-4  text-center">         
+          <div tuiCardLarge class="m-2" tuiAppearance="warning">
+            <header tuiHeader>
+              <tui-avatar tuiAvatarOutline src="@tui.user" />
+            </header>
+            <h3 tuiTitle>
+              <strong>
+                Web Development
+              </strong>
+              
+              <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+              <span tuiSubtitle>
+                We design and develop modern, responsive websites that reflect your brand and deliver a seamless user experience across all devices.
+              </span>
+            </h3>
+          </div>
+  
+          <div tuiCardLarge class="m-2" tuiAppearance="warning">
+            <header tuiHeader>
+              <tui-avatar tuiAvatarOutline src="@tui.user" />
+            </header>
+            <h3 tuiTitle>
+              <strong>
+                Mobile App Development
+              </strong>
+              <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+              <span tuiSubtitle>
+                Our team builds high-performance mobile applications for both Android and iOS platforms — ideal for customer engagement, productivity, or internal operations.
+              </span>
+            </h3>
+          </div>
+        </div>
+  
+        
+        <div class="col-md-4 text-center">
+          <div class="container-wrapper" tuiAppearance="warning" tuiCardLarge>
+            <tui-scrollbar>
+              <header tuiHeader>
+                <tui-avatar tuiAvatarOutline src="@tui.user" />
+              </header>
+              <h3 tuiTitle>
+                <strong>Custom Software Solutions</strong>
+                <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+                <span tuiSubtitle>
+                  From workflow automation to specialized business tools, we develop custom software tailored to your specific operational needs.
+                </span>
+              </h3>
+              <div  tuiCardLarge class="m-auto" tuiAppearance="glass">
+                <p>We help streamline operations by connecting your existing tools, platforms, and services into a unified, efficient ecosystem.</p>
+              </div>
+            </tui-scrollbar>
+          </div>    
+        </div>
+  
+  
+        
+        
+        <div class="col-md-4  text-center" >       
+          <div tuiCardLarge class="m-2" tuiAppearance="floating">
+            <header tuiHeader class="dark" style="justify-content: center;">
+              <tui-avatar tuiAvatarOutline src="@tui.user" />
+            </header>
+            <h3 tuiTitle class="dark">
+              <strong>Business Dashboards & Reporting Tools</strong>
+              <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+              <span tuiSubtitle class="dark">
+                Gain visibility into your business with interactive dashboards that simplify data and support better decision-making.
+              </span>
+            </h3>
+        </div>
+  
+  
+        <div tuiCardLarge class="m-2" tuiAppearance="floating">
+          <header tuiHeader class="dark">
+            <tui-avatar tuiAvatarOutline src="@tui.user" />
+          </header>
+          <h3 tuiTitle class="dark">
+            <strong>Ongoing Support & Maintenance</strong>
+            <om-neon-underline [tuiAppearance]="'positive'" [middleColor]="'lime'" [sideColor]="'green'"/>
+            <span tuiSubtitle>
+              Your growth doesn’t stop — and neither do we. Count on reliable technical support, updates, and enhancements as your business evolves.
+            </span>
+          </h3>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  </om-tracing-beam>
+  
+  
+  <div class="desktopstack">
+    <tui-chip class="m-2 " appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+      <strong>
+          Other Services
+      </strong>
+  </tui-chip>
+    <div class="row m-2" style="background-color: transparent;">
+      <om-shine-border borderColor="transparent" [borderRadius]="'15px'" gradientColorStart="green" gradientColorMiddle="lime" gradientColorEnd="yellowgreen"  >
+        <div class="containers-wrapper">
+          <div class="col-md-12 col-12 " style="background-color: transparent;border: 0px solid transparent;border-color: transparent;">
+          
+            <div id="android"  style="background-image: url('https://img.freepik.com/premium-psd/smart-investment-app-ui-kit_553413-1201.jpg?w=740'); background-blend-mode: luminosity;opacity: 0.9;border-radius: 15px;border-color: transparent;">
+                <div class="contents">
+                    <div class="container">
+                        <div class="row desktopstack">
+                            <div class="col-md-6">
+                                <tui-chip class="m-2" appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                                    <strong>
+                                        Professional dashboards
+                                    </strong>
+                                </tui-chip><br>
+                                <em style="font-weight: bold;font-size: 18px ;color: white;">
+                                  We craft professional, responsive dashboards that help you visualize key metrics and manage data with ease.
+                                    <!-- From admin panels to analytics views, our dashboards are tailored for clarity, performance, and mobile responsiveness. -->
+                                    </em><br>
+    
+                                <tui-chip class="m-2" appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+                                    <strong>
+                                        Payment Integration
+                                    </strong>
+                                </tui-chip><br>
+                                <em style="font-weight: bold;font-size: 20px ;color: white;">
+                                  Accept payments easily with secure integration for M-Pesa, Stripe, PayPal, and more — directly into your site or app.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </om-shine-border>
+      
+  </div>
+  </div>
 </div>
-</div>
+

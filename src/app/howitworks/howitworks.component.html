@@ -1,70 +1,88 @@
-<om-flickering-grid [squareSize]="6" color=""  style="opacity: 0.7;background-image: url(coding.webp);background-image: url(coding.webp);background-position: center;background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: overlay;height:100%;border: 0px solid transparent;" >
-    <div class="card"  style="background: rgb(186,246,27);
-background: linear-gradient(210deg,transparent 50%, rgb(220, 238, 171) 0%, rgba(184,249,31,1) 0%, rgba(255,255,255,1) 50%);border: 0px solid transparent;" >
-        <div class="" tuiAppearance="positive">
-            <tui-chip appearance="positive">
-                How It Works
-            </tui-chip>
-        
-            <h3 tuiHeader>
-                Vertex Work Process
-            </h3>
-            <div class="container">
-                <div class="row justify-content-center align-content-center">
-                    <div class="col-md-3 col-6">
-                        <div tuiCardMedium tuiAppearance="positive">
-                            <img src="favicon.ico" alt="">
-                        </div>
-                        <header tuiHeader tuiBadge appearance="positive">1</header>
-                        <h4 tuiTitle>On Discussion
-                            <span tuiSubtitle>
-                                This is the subtitle. this is where the info is explained
-                            </span>
-                        </h4>
-                    </div>
-            
-            
-                    <div class="col-md-3 col-6">
-                        <div tuiCardMedium tuiAppearance="positive">
-                            <img src="favicon.ico" alt="">
-                        </div>
-                        <header tuiHeader tuiBadge appearance="positive">2</header>
-                        <h4 tuiTitle>On Discussion
-                            <span tuiSubtitle>
-                                This is the subtitle. this is where the info is explained
-                            </span>
-                        </h4>
-                    </div>
-            
-            
-                    <div class="col-md-3 col-6">
-                        <div tuiCardMedium tuiAppearance="positive">
-                            <img src="favicon.ico" alt="">
-                        </div>
-                        <header tuiHeader tuiBadge appearance="positive">3</header>
-                        <h4 tuiTitle>On Discussion
-                            <span tuiSubtitle>
-                                This is the subtitle. this is where the info is explained
-                            </span>
-                        </h4>
-                    </div>
-            
-            
-                    <div class="col-md-3 col-6">
-                        <div tuiCardMedium tuiAppearance="positive">
-                            <img src="favicon.ico" alt="">
-                        </div>
-                        <header tuiHeader tuiBadge appearance="positive">4</header>
-                        <h4 tuiTitle>On Discussion
-                            <span tuiSubtitle>
-                                This is the subtitle. this is where the info is explained
-                            </span>
-                        </h4>
-                    </div>
-        
-                </div>
-            </div>
-            
-        </div>
-    </div>
+ <div class=" section " style="background-color: #10291e;" tuiCardLarge>
+    <om-flickering-grid 
+ tuiAppearance=""
+ color="darkgreen" 
+ [flickerChance]="1" 
+ style="background-color: transparent;"
+ [gridGap]="10" 
+ [maxOpacity]="0.5" 
+ [squareSize]="5"
+ class="">
+ 
+ <div class="timeline-wrapper" tuiAppearance="" >
+  <tui-chip appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;" class="">
+    <strong>
+        How It Works
+    </strong>
+  </tui-chip>
+    <om-timeline
+    class="fw-bold  text-light m-auto"
+    style="color: rgb(0, 36, 3);"
+      [data]="data1"
+      [entryGap]="'1rem'"
+      [titleMaxWidth]="'15rem'"
+      [orientation]="'switch'"
+      [pathColor]="'green'"
+    ></om-timeline>
+</div>
+
 </om-flickering-grid>
+<div>
+    <p tuiTitle class="fw-bold mb-3 text-light">Looking for Something Else?
+        <span tuiSubtitle class="fw-bold mb-3 text-light">
+            If you have a unique project or need a solution not listed above, we’re happy to help.At Vertex, we offer flexible, custom tech services tailored to your vision — just reach out and let’s explore what we can build together.
+        </span>
+    </p>
+</div>
+</div>
+
+<!-- tech stack for mobile devices -->
+<div class="mobilestack m-3">
+  <tui-chip  appearance="positive" [size]="'s'" [style.background-color]="'yellowgreen'" style="text-transform: uppercase;color: black;">
+    <strong>
+        Our Tech Stack
+    </strong>
+</tui-chip>
+<div class="m-3"></div>
+  <tui-chip appearance="negative" size="m" class="m-2">
+      <tui-avatar size="m" tuiAvatarOutline="linear-gradient(#c86dd7, #3023ae)"
+      [style.background]="'linear-gradient(#3023ae, #c86dd7)'"
+      [style.color]="'#fff'" appearance="accent" src="https://icon2.cleanpng.com/20180502/fgw/avshxd3t1.webp" />
+      Angular
+  </tui-chip>
+
+  <tui-chip appearance="accent" size="m" class="m-2">
+      <tui-avatar size="m" tuiAvatarOutline="linear-gradient(#c86dd7, #3023ae)"
+      [style.background]="'linear-gradient(#3023ae, #c86dd7)'"
+      [style.color]="'#fff'" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbUy6_kKPlbyMKuGoe_yIue3ujdXLCXZiiw&s"/>
+      Flask
+  </tui-chip>
+
+  <tui-chip appearance="positive" size="m" class="m-2">
+      <tui-avatar size="m" tuiAvatarOutline="linear-gradient(#c86dd7, #3023ae)"
+      [style.background]="'linear-gradient(#3023ae, #c86dd7)'"
+      [style.color]="'#fff'" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlXkwasX3CRBW5UwURT9kVjgN21eMyq9nl-BiCVe6PGdZafm_lvlNC1qmkPbrBGxFTJk&usqp=CAU"/>
+      MySQL
+  </tui-chip>
+  <tui-chip appearance="glass" size="m" class="m-2">
+      <tui-avatar size="m" tuiAvatarOutline="linear-gradient(#c86dd7, #3023ae)"
+      [style.background]="'linear-gradient(#3023ae, #c86dd7)'"
+      [style.color]="'#fff'" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKgkvOLoQOTmdpdCuUVzXYALr2TkfXAOl9w&s" />
+      Flutter
+  </tui-chip>
+
+  <tui-chip appearance="warning" size="m" class="m-2">
+      <tui-avatar size="m" tuiAvatarOutline="linear-gradient(#c86dd7, #3023ae)"
+      [style.background]="'linear-gradient(#3023ae, #c86dd7)'"
+      [style.color]="'#fff'" src="https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png"/>
+      Firebase
+  </tui-chip>
+
+  <tui-chip appearance="icon" size="m" class="m-2">
+      <tui-avatar size="m" tuiAvatarOutline="linear-gradient(#c86dd7, #3023ae)"
+      [style.background]="'linear-gradient(#3023ae, #c86dd7)'"
+      [style.color]="'#fff'"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xJcvFr9kv-ZkLqUARtOVf1opACZ7gY1rjFzQvXd5odT2B0emlgKgwuO-hsjc30-TpYo&usqp=CAU         "/>
+      NodeJS
+  </tui-chip>
+</div>
+<!-- end techstack for mobile -->

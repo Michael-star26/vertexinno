@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TuiAppearance, TuiTitle } from '@taiga-ui/core';
 import { TuiBadge, TuiChip } from '@taiga-ui/kit';
-import { TuiCardMedium, TuiHeader } from '@taiga-ui/layout';
+import { TuiCardLarge, TuiCardMedium, TuiHeader } from '@taiga-ui/layout';
 
 @Component({
   selector: 'app-team',
@@ -11,7 +11,8 @@ import { TuiCardMedium, TuiHeader } from '@taiga-ui/layout';
     TuiAppearance,
     TuiTitle,
     TuiHeader,
-    TuiBadge
+    TuiBadge,
+    TuiCardLarge
   ],
   templateUrl: './team.component.html',
   styleUrl: './team.component.less'

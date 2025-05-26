@@ -4,7 +4,7 @@ import { TuiAppearance, TuiButton, TuiIcon, TuiNotification, TuiTitle } from '@t
 import { TuiCardLarge, TuiCardMedium, TuiCell, TuiNavigation } from '@taiga-ui/layout';
 import { NgxCrypticTextComponent } from '@omnedia/ngx-cryptic-text';
 import { NgxRetroGridComponent } from '@omnedia/ngx-retro-grid';
-import { TuiAvatar, TuiAvatarOutline, TuiChip,  } from '@taiga-ui/kit';
+import { TuiAvatar, TuiAvatarOutline, TuiChip, TuiFade,  } from '@taiga-ui/kit';
 import { TuiRipple } from '@taiga-ui/addon-mobile';
 import {TuiAxes, TuiLineChart,TuiBarChart} from '@taiga-ui/addon-charts';
 import type {TuiPoint} from '@taiga-ui/core';
@@ -29,6 +29,7 @@ import { tuiCeil } from '@taiga-ui/cdk';
     TuiTitle,
     TuiCardMedium,
     TuiIcon,
+    TuiFade,
     TuiAxes,
     TuiLineChart,
     TuiBarChart

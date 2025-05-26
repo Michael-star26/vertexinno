@@ -1,19 +1,61 @@
-// @media screen{
-//     @media  (min-width: 600px) {
-        
-//     }
-// };
-
-div,h,a{
-    color:aliceblue;
+div,h,a,strong{
+    color:white;
 }
 
+#main{
+    opacity: 0.7;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: luminosity;height:100%;
+}
+#mainRow{
+    background:linear-gradient( -125deg,transparent 50%,#10291e,#10291e);
+    border-color: transparent;
+    border-radius: 0%;
+    box-shadow: transparent;
+    border-bottom: 0px solid transparent;
+    filter: drop-shadow(2px 3px 0px #10291e )
+}
+.chip{
+    text-transform: uppercase;
+    color: black;
+    background-color: yellowgreen;
+}
+
+
+@media screen{
+    @media (min-width:601px){
+        .text{
+            text-decoration-style: double;
+            font-weight: bolder;
+            color: black;
+            font-family: cursive;
+        }
+    }
+  };
+  @media screen{
+    @media (max-width:600px){
+        .text{
+            text-decoration-style: double;
+            font-weight: bolder;
+            color: black;
+        }
+    }
+  };
+
+
+.p{
+    color: black;
+}
+button,[tuiButton]{
+    background:yellowgreen;
+}
 .left{
     left:0;
     bottom:0;
     justify-self: baseline;
 }   
-
+ 
 .mt-5 {
     background: rgb(226, 245, 226);
     padding: 0.75rem;
@@ -26,17 +68,42 @@ div,h,a{
     }
 }
 
-.axes {
-    block-size: 5rem;
-    inline-size: 15rem;
-    color: darkgreen;
-}
+@media screen{
+    @media (min-width:601px){
+        .axes {
+            block-size: 5rem;
+            inline-size: 15rem;
+            color: darkgreen;
+        }
+        
+        .barAxes {
+            block-size: 7rem;
+            inline-size: 35rem;
+            color: darkgreen;
+            --tui-chart-categorical-00: darkgreen;
+            --tui-chart-categorical-01: yellowgreen;
+        }
+    }
+};
 
-.barAxes {
-    block-size: 7rem;
-    inline-size: 35rem;
-    color: darkgreen;
-    --tui-chart-categorical-00: darkgreen;
-    --tui-chart-categorical-01: yellowgreen;
-}
-
+@media screen{
+    @media (max-width:600px){
+        .axes {
+            block-size: 2.5rem;
+            inline-size: 7.5rem;
+            color: darkgreen;
+        }
+        
+        .barAxes {
+            block-size: 3.5rem;
+            inline-size: 17.5rem;
+            color: darkgreen;
+            --tui-chart-categorical-00: darkgreen;
+            --tui-chart-categorical-01: yellowgreen;
+        }
+        #charts{
+            display: none;
+            gap: 1rem;
+        }
+    }
+};

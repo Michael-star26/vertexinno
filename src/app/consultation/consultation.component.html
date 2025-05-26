@@ -1,0 +1,98 @@
+<div class="section "  tuiAppearance="">
+   <div class="row svgbg" tuiAppearance="">
+    <div class="col-md-6 ">
+        <div tuiCardLarge class="card1">
+            <h4 class="header">Let's Discuss On Something Cool Together</h4>
+        <button tuiCell class="">
+            <tui-avatar src="@tui.phone"/>
+            <div tuiTitle>
+                +254701136880
+            </div>
+        </button>
+        <button tuiCell class="" tuiAppearance="glass">
+            <tui-avatar src="@tui.mail"/>
+            <div tuiTitle>
+                michael.o&#64;kakao.com
+            </div>
+        </button>
+        <button tuiCell class="">
+            <tui-avatar src="@tui.map-pin"/>
+            <div tuiTitle>
+                Rongai, Kenya
+            </div>
+        </button>
+
+
+        <footer class="footer mt-5">
+            <button tuiButton class="m-2">
+                <tui-icon icon="@tui.github" /> Github
+            </button><br>
+            <button tuiButton class="m-2"><br>
+                <tui-icon icon="@tui.linkedin" /> LinkedIn 
+            </button><br>
+            <button class="m-2" tuiButton>
+                <tui-icon icon="@tui.x" /> X(Twitter)
+            </button>
+        </footer>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div tuiCardLarge tuiAppearance="positive" class="formcard">  
+            <p>I'm Interested In...</p>
+                <tui-input-tag
+                [separator]="customSeparator"
+                [tuiTextfieldLabelOutside]="true"
+                [(ngModel)]="value"
+                [autoColor]="false"
+                [editable]="true"
+                [maxLength]="25"
+                class="pill"
+            />
+            <form tuiForm="m" class="inputgrp">
+                
+                <tui-textfield>
+                    <label for="name" tuiLabel>Name</label>
+                    <input
+                    formControlName="name"
+                    placeholder="Enter Name"
+                    tuiTextfield
+                />
+                </tui-textfield>
+                <tui-textfield>
+                    <label for="email" tuiLabel>Email</label>
+                    <input
+                    formControlName="email"
+                    placeholder="Enter Email"
+                    tuiTextfield
+                />
+                </tui-textfield>
+                <tui-textarea >
+                    Message
+                    <textarea
+                        placeholder="Write A Message"
+                        tuiTextfieldLegacy
+                    ></textarea>
+                </tui-textarea>
+                <button
+                
+                tuiButton
+                type="button"
+                class="button"
+                >
+                    <tui-avatar
+                        src="@tui.send"
+                    />
+                    Send Message
+                </button>
+            </form>
+
+            
+        </div>
+
+        
+    </div>
+   </div>
+</div>
+
+

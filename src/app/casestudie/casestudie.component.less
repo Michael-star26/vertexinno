@@ -4,3 +4,50 @@
     justify-self: center;
     text-align: center;
 }
+div,h,a,strong{
+  color:white;
+}
+span{
+  color: white;
+  font-weight: 500;
+}
+
+@media screen{
+    @media (min-width:601px){
+      .container,.testimonial{
+        overflow-x: hidden;
+      }
+      .mobile{
+        display: none
+      }
+    }
+  };
+  
+  @media screen{
+    @media (max-width:600px){
+      .container,.testimonial{
+        overflow-x: hidden;
+        zoom:80%;
+        width: 100%;
+      }
+      .desktop{
+        display: none
+      }
+    }
+  };
+
+  .texts{
+    font-size:14px ;
+  }
+
+[tui-chip]{
+    font-family: poppins;
+}
+[tuiSubtitle],[tuiSubtitle],[tuiCell]{
+  color:white
+}
+
+.background{
+  background: url('/svg/cccoil.svg');background-size: cover;background-position: center;background-repeat: no-repeat;
+  border-radius: 1px;
+}

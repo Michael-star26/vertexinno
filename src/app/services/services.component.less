@@ -17,7 +17,7 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
     font-weight: bold;
     line-height: max;
     padding: 2px;
-    font-family: cursive;
+    
 }
 
 .dark{
@@ -38,14 +38,15 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
     margin: 2px;
 }
 
-.content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    padding: 0px;
-  }
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0 2rem 2rem;
+}
 
 // @media only screen and (min-width:600px) {
 //     .content{
@@ -62,3 +63,72 @@ header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
     height: 350px;
     text-align: center;
   }
+
+  .sub{
+    background: rgb(222, 250, 144);
+    background: linear-gradient(-45deg,
+    transparent 50%, rgb(177, 218, 97) 0%, rgb(255, 255, 255) 50%);
+    margin: auto;
+    
+  }
+  #chip{
+    text-transform: uppercase;
+    color: black;
+    width: fit-content;
+    background-color: yellowgreen;
+  }
+  .shine-border{
+    background-color:transparent; 
+  }
+  // mobile
+@media screen{
+  @media (max-width:600px){
+      #desktop{
+          display: none;
+      };
+      .sub{
+        border-radius: 15px 15px 0 0;
+      }
+  }
+};
+
+// desktop
+@media screen{
+  @media (min-width:601px){
+      #mobile,.desktopstack{
+          display: none;
+      };
+      header,p,span,h1,h2,h3[tuiTitle],[tuiSubtitle]{
+        font-family: cursive;
+      }
+  }
+};
+.trace{
+  inline-size: 15px;
+  gap: 1;
+  padding: 1px;
+  margin: 2px;
+}
+
+.contents{
+  background:linear-gradient( -125deg,transparent 30%,#10291e,#10291e);
+  border-color: transparent;
+  border-radius: 0%;
+  box-shadow: transparent;
+  border-bottom: 0px solid transparent;
+  filter: drop-shadow(2px 3px 0px #10291e )
+}
+.containers-wrapper {
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+
+
+#android{
+  opacity: 0.9;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat,repeat;background-size: cover; background-blend-mode: luminosity;height:100%;
+}
