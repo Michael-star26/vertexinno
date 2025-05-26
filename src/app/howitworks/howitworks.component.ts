@@ -38,11 +38,11 @@ export class HowitworksComponent {
       
     },
     {
-      title: '<p class="timeline-title">4</p>',
+      title: '<p class="timeline-title">3</p>',
       content: '<div><h1 class="timeline-title">We Build & Test</h1><p class="timeline-content">Our team designs, develops, and rigorously tests your solution — ensuring it’s reliable, scalable, and ready for real-world use.</p></div></div>',
     },
     {
-      title: '<p class="timeline-title">5</p>',
+      title: '<p class="timeline-title">4</p>',
       content: '<div ><h1 class="timeline-title" >Launch & Support</h1><p class="timeline-content">We deploy your product, provide training if needed, and offer ongoing support to keep everything running smoothly as your business grows.</p></div></div>',
     },
    
