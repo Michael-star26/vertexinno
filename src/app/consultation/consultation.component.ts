@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TuiRepeatTimes } from '@taiga-ui/cdk';
 import { TuiAppearance, TuiButton, TuiIcon, TuiLabel, TuiTextfield } from '@taiga-ui/core';
-import { TuiAvatar } from '@taiga-ui/kit';
+import { TuiAvatar, TuiButtonGroup } from '@taiga-ui/kit';
 import { TuiCardLarge, TuiCell, TuiForm } from '@taiga-ui/layout';
 import {TuiInputTagModule, TuiTextfieldControllerModule,TuiTextareaModule} from '@taiga-ui/legacy';
 
@@ -25,7 +25,8 @@ import {TuiInputTagModule, TuiTextfieldControllerModule,TuiTextareaModule} from 
     ReactiveFormsModule,
     TuiLabel,
     TuiTextareaModule,
-    TuiForm
+    TuiForm,
+    TuiButtonGroup
   ],
   templateUrl: './consultation.component.html',
   styleUrl: './consultation.component.less'
