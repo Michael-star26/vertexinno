@@ -9,10 +9,11 @@ import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { BlogComponent } from '../blog/blog.component';
 import { CalltoactionComponent } from '../calltoaction/calltoaction.component';
 import { FooterComponent } from '../footer/footer.component';
-import { TuiNavigation } from '@taiga-ui/layout';
+import { TuiCardLarge, TuiNavigation } from '@taiga-ui/layout';
 import { NavComponent } from '../nav/nav.component';
 import { ArticlesComponent } from '../blogs/articles/articles.component';
 import { ConsultationComponent } from '../consultation/consultation.component';
+import { TuiAppearance } from '@taiga-ui/core';
 
 @Component({
   selector: 'app-main',
@@ -29,7 +30,9 @@ import { ConsultationComponent } from '../consultation/consultation.component';
     FooterComponent,
     TuiNavigation,
     NavComponent,
-    ConsultationComponent
+    ConsultationComponent,
+    TuiAppearance,
+    TuiCardLarge
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.less'
