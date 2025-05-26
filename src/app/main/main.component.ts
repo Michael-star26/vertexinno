@@ -14,6 +14,7 @@ import { NavComponent } from '../nav/nav.component';
 import { ArticlesComponent } from '../blogs/articles/articles.component';
 import { ConsultationComponent } from '../consultation/consultation.component';
 import { TuiAppearance } from '@taiga-ui/core';
+import { NgxScrollTopComponent } from 'ngx-scrolltop';
 
 @Component({
   selector: 'app-main',
@@ -32,7 +33,8 @@ import { TuiAppearance } from '@taiga-ui/core';
     NavComponent,
     ConsultationComponent,
     TuiAppearance,
-    TuiCardLarge
+    TuiCardLarge,
+    NgxScrollTopComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.less'
